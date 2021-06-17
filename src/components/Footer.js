@@ -76,7 +76,7 @@ class Footer extends Component {
                         <Row>
                             <Col md="6">
                                 <div className="copy-text">
-                                    <p>Copyright &copy; 2020 | Designed With <i className="las la-heart"></i> by <a href={process.env.PUBLIC_URL + "/"} target="_blank" rel="noopener noreferrer">SnazzyTheme</a></p>
+                                    <p>Copyright &copy; 2017</p>
                                 </div>
                             </Col>
                             <Col md="6" className="text-right">
