@@ -71,7 +71,7 @@ class Header extends Component {
                                             <i className="flaticon-phone-call"></i>
                                         </div>
                                         <div className="box-content">
-                                            <p>call ya habibi</p>
+                                            <p>Office Number</p>
                                             <span>(908) 875 7678</span>
                                         </div>
                                     </div>
