@@ -18,7 +18,7 @@ class Header extends Component {
                             <Col lg="6" md="5">
                                 <div className="bar-left">
                                     <ul className="list-unstyled list-inline">
-                                        <li className="list-inline-item"><i className="las la-map-marker"></i>795 South Park Avenue, CA 94107.</li>
+                                        <li className="list-inline-item"><i className="las la-map-marker"></i>Al MizharAl Mizhar 1 - Dubai.</li>
                                         <li className="list-inline-item"><Link to={process.env.PUBLIC_URL + "/faq"}>Have Questions</Link></li>
                                     </ul>
                                 </div>
@@ -26,7 +26,7 @@ class Header extends Component {
                             <Col lg="6" md="7">
                                 <div className="bar-right d-flex justify-content-end">
                                     <ul className="list-unstyled list-inline bar-social">
-                                        <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-facebook-f"></i></a></li>
+                                        <li className="list-inline-item"><a href="https://www.facebook.com/markazalhuda"><i className="fab fa-facebook-f"></i></a></li>
                                         <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-twitter"></i></a></li>
                                         <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-linkedin-in"></i></a></li>
                                         <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-instagram"></i></a></li>
