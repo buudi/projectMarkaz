@@ -28,15 +28,15 @@ class Header extends Component {
                                     <ul className="list-unstyled list-inline bar-social">
                                         <li className="list-inline-item"><a href="https://www.facebook.com/markazalhuda"><i className="fab fa-facebook-f"></i></a></li>
                                         <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-twitter"></i></a></li>
-                                        <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-linkedin-in"></i></a></li>
-                                        <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-instagram"></i></a></li>
+                                        
+                                        <li className="list-inline-item"><a href="https://www.instagram.com/markazalhuda/"><i className="fab fa-instagram"></i></a></li>
                                     </ul>
                                     <ul className="list-unstyled list-inline bar-lang">
                                         <li className="list-inline-item">
                                             <Dropdown>
-                                                <Dropdown.Toggle as="a"><img src={process.env.PUBLIC_URL + "/assets/images/us.png"} alt="" />Arabic<i className="las la-angle-down"></i></Dropdown.Toggle>
+                                                <Dropdown.Toggle as="a"><img src={process.env.PUBLIC_URL + "/assets/images/ae.png"} alt="" />Arabic<i className="las la-angle-down"></i></Dropdown.Toggle>
                                                 <Dropdown.Menu as="ul">
-                                                    <Dropdown.Item as="li"><img src={process.env.PUBLIC_URL + "/assets/images/us.png"} alt="" /> Arabic</Dropdown.Item>
+                                                    <Dropdown.Item as="li"><img src={process.env.PUBLIC_URL + "/assets/images/ae.png"} alt="" /> Arabic</Dropdown.Item>
                                                     <Dropdown.Item as="li"><img src={process.env.PUBLIC_URL + "/assets/images/us.png"} alt="" /> English</Dropdown.Item>
                                                 </Dropdown.Menu>
                                             </Dropdown>
@@ -69,7 +69,7 @@ class Header extends Component {
                                         </div>
                                         <div className="box-content">
                                             <p>Office Number</p>
-                                            <span>(908) 875 7678</span>
+                                            <span>(971) 263 3338</span>
                                         </div>
                                     </div>
                                     <div className="emcontact-box d-flex">
@@ -78,7 +78,7 @@ class Header extends Component {
                                         </div>
                                         <div className="box-content">
                                             <p>Enquery Us</p>
-                                            <span>enquery@edulyn.com</span>
+                                            <span>Markazalhuda@gmail.com</span>
                                         </div>
                                     </div>
                                     <div className="apply-btn">
