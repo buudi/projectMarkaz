@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "backgroundImage": "slider-1.jpg",
+        "uniqClass": "slider-box slider-box1",
+        "title": "Welcome To Edulyn.",
+        "desc": "Best University In This Region Join With Us Today",
+        "btnOneLink": "course-grid",
+        "btnTwoLink": "contact"
+    },
+    {
+        "id": "2",
+        "backgroundImage": "slider-2.jpg",
+        "uniqClass": "slider-box slider-box2 text-right",
+        "title": "Welcome To Edulyn.",
+        "desc": "Best University In This Region Join With Us Today",
+        "btnOneLink": "course-grid",
+        "btnTwoLink": "contact"
+    }
+]

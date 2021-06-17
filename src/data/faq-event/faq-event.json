@@ -1,0 +1,48 @@
+{
+    "eventDataList": [
+        {
+            "id": "1",
+            "eventDate": "25 March",
+            "eventTitle": "2020 admidion fair going on this week",
+            "eventTime": "5:30pm - 7.00pm",
+            "eventLocation": "Newyork,NY.",
+            "eventdesc": "Lorem ipsum dolor sit amet consectetur. Como Ssee hou",
+            "eventLink": "/event-details"
+        },
+        {
+            "id": "2",
+            "eventDate": "25 March",
+            "eventTitle": "2020 admidion fair going on this week",
+            "eventTime": "5:30pm - 7.00pm",
+            "eventLocation": "Newyork,NY.",
+            "eventdesc": "Lorem ipsum dolor sit amet consectetur. Como Ssee hou",
+            "eventLink": "/event-details"
+        },
+        {
+            "id": "3",
+            "eventDate": "25 March",
+            "eventTitle": "2020 admidion fair going on this week",
+            "eventTime": "5:30pm - 7.00pm",
+            "eventLocation": "Newyork,NY.",
+            "eventdesc": "Lorem ipsum dolor sit amet consectetur. Como Ssee hou",
+            "eventLink": "/event-details"
+        }
+    ],
+    "faqDataList": [
+        {
+            "id": "1",
+            "faqTitle": "I don't know What should I write here?",
+            "faqDesc": "Anim pariatur cliche reprehenderit, enim eiusm high life accusamus terry richardson ad squid. 3 wolf moon."
+        },
+        {
+            "id": "2",
+            "faqTitle": "I don't know What should I write here?",
+            "faqDesc": "Anim pariatur cliche reprehenderit, enim eiusm high life accusamus terry richardson ad squid."
+        },
+        {
+            "id": "3",
+            "faqTitle": "I don't know What should I write here?",
+            "faqDesc": "Anim pariatur cliche reprehenderit, enim eiusm high life accusamus terry richardson ad squid. 3 wolf moon."
+        }
+    ]
+}

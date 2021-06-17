@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "uniqClass": "box-icon box1",
+        "boxIcon": "flaticon-thumbs-like",
+        "title": "Popular Courses",
+        "subTitle": "Lorem ipsum dolor sit, amet consectetur elit."
+    },
+    {
+        "id": "2",
+        "uniqClass": "box-icon box2",
+        "boxIcon": "flaticon-reading",
+        "title": "Modern Library",
+        "subTitle": "Lorem ipsum dolor sit, amet consectetur elit."
+    },
+    {
+        "id": "3",
+        "uniqClass": "box-icon box3",
+        "boxIcon": "flaticon-teacher",
+        "title": "Qualified Teacher",
+        "subTitle": "Lorem ipsum dolor sit, amet consectetur elit."
+    }
+]
