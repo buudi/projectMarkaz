@@ -34,10 +34,13 @@ class Header extends Component {
                                     <ul className="list-unstyled list-inline bar-lang">
                                         <li className="list-inline-item">
                                             <Dropdown>
-                                                <Dropdown.Toggle as="a"><img src={process.env.PUBLIC_URL + "/assets/images/us.png"} alt="" />Arabic<i className="las la-angle-down"></i></Dropdown.Toggle>
+                                                <Dropdown.Toggle as="a"><img src={process.env.PUBLIC_URL + "/assets/images/us.png"} alt="" />English<i className="las la-angle-down"></i></Dropdown.Toggle>
                                                 <Dropdown.Menu as="ul">
-                                                    <Dropdown.Item as="li"><img src={process.env.PUBLIC_URL + "/assets/images/us.png"} alt="" /> Arabic</Dropdown.Item>
                                                     <Dropdown.Item as="li"><img src={process.env.PUBLIC_URL + "/assets/images/us.png"} alt="" /> English</Dropdown.Item>
+                                                    <Dropdown.Item as="li"><img src={process.env.PUBLIC_URL + "/assets/images/fra.png"} alt="" /> French</Dropdown.Item>
+                                                    <Dropdown.Item as="li"><img src={process.env.PUBLIC_URL + "/assets/images/ger.png"} alt="" /> German</Dropdown.Item>
+                                                    <Dropdown.Item as="li"><img src={process.env.PUBLIC_URL + "/assets/images/spa.png"} alt="" /> Spanish</Dropdown.Item>
+                                                    <Dropdown.Item as="li"><img src={process.env.PUBLIC_URL + "/assets/images/bra.png"} alt="" /> Brazilian</Dropdown.Item>
                                                 </Dropdown.Menu>
                                             </Dropdown>
                                         </li>
@@ -68,7 +71,7 @@ class Header extends Component {
                                             <i className="flaticon-phone-call"></i>
                                         </div>
                                         <div className="box-content">
-                                            <p>Office Number</p>
+                                            <p>call ya habibi</p>
                                             <span>(908) 875 7678</span>
                                         </div>
                                     </div>
