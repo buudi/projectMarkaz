@@ -18,9 +18,9 @@ class HeaderTwo extends Component {
                             <Col lg="7" md="9">
                                 <div className="bar-left">
                                     <ul className="list-unstyled list-inline">
-                                        <li className="list-inline-item"><i className="las la-phone"></i>+1 (396) 486 4709</li>
-                                        <li className="list-inline-item"><i className="las la-envelope"></i>enquery@domain.com</li>
-                                        <li className="list-inline-item"><i className="las la-map-marker"></i>795 South Park Avenue, CA
+                                        <li className="list-inline-item"><i className="las la-phone"></i>+971 263 3338</li>
+                                        <li className="list-inline-item"><i className="las la-envelope"></i>Markazalhuda@gmail.com</li>
+                                        <li className="list-inline-item"><i className="las la-map-marker"></i>Al MizharAl Mizhar 1 - Dubai.
                                     </li>
                                     </ul>
                                 </div>
@@ -30,20 +30,20 @@ class HeaderTwo extends Component {
                                     <ul className="list-unstyled list-inline bar-lang">
                                         <li className="list-inline-item">
                                             <Dropdown>
-                                                <Dropdown.Toggle><img src={process.env.PUBLIC_URL + "/assets/images/us.png"} alt="" />English<i className="las la-angle-down"></i></Dropdown.Toggle>
+                                                <Dropdown.Toggle><img src={process.env.PUBLIC_URL + "/assets/images/ae.png"} alt="" />Arabic<i className="las la-angle-down"></i></Dropdown.Toggle>
                                                 <Dropdown.Menu as="ul">
-                                                    <Dropdown.Item as="li"><img src={process.env.PUBLIC_URL + "/assets/images/us.png"} alt="" /> Arabic</Dropdown.Item>
-                                                    <Dropdown.Item as="li"><img src={process.env.PUBLIC_URL + "/assets/images/fra.png"} alt="" /> English</Dropdown.Item>
+                                                    <Dropdown.Item as="li"><img src={process.env.PUBLIC_URL + "/assets/images/ae.png"} alt="" /> Arabic</Dropdown.Item>
+                                                    <Dropdown.Item as="li"><img src={process.env.PUBLIC_URL + "/assets/images/us.png"} alt="" /> English</Dropdown.Item>
                                                     
                                                 </Dropdown.Menu>
                                             </Dropdown>
                                         </li>
                                     </ul>
                                     <ul className="list-unstyled list-inline bar-social">
-                                        <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-facebook-f"></i></a></li>
+                                        <li className="list-inline-item"><a href="https://www.facebook.com/markazalhuda" target="_blank"rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
                                         <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-twitter"></i></a></li>
-                                        <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-linkedin-in"></i></a></li>
-                                        <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-instagram"></i></a></li>
+                                        
+                                        <li className="list-inline-item"><a href="https://www.instagram.com/markazalhuda/" target="_blank"rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
                                     </ul>
 
                                     <ul className="list-unstyled list-inline sidebar-button">

@@ -90,18 +90,18 @@ function Sidebar() {
                 <div className="side-contact">
                     <h5>Contact Us</h5>
                     <ul className="list-unstyled">
-                        <li><i className="las la-map-marker"></i>795 South Park Avenue, New York, NY USA 94107</li>
-                        <li><i className="las la-phone"></i>+1 (396) 486 4709</li>
-                        <li><i className="las la-envelope"></i>enquery@edulyb.com</li>
+                        <li><i className="las la-map-marker"></i>Al MizharAl Mizhar 1 - Dubai.</li>
+                        <li><i className="las la-phone"></i>+971 263 3338</li>
+                        <li><i className="las la-envelope"></i>Markazalhuda@gmail.com</li>
                     </ul>
                 </div>
                 <div className="side-social">
                     <ul className="list-unstyled list-inline">
-                        <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-facebook-f"></i></a></li>
+                        <li className="list-inline-item"><a href="https://www.facebook.com/markazalhuda" target="_blank"rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
                         <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-twitter"></i></a></li>
                         <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-google"></i></a></li>
-                        <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-linkedin-in"></i></a></li>
-                        <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-instagram"></i></a></li>
+                        
+                        <li className="list-inline-item"><a href="https://www.instagram.com/markazalhuda/" target="_blank"rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
