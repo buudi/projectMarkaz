@@ -18,7 +18,7 @@ class HeaderTwo extends Component {
                             <Col lg="7" md="9">
                                 <div className="bar-left">
                                     <ul className="list-unstyled list-inline">
-                                        <li className="list-inline-item"><i className="las la-phone"></i>+971 263 3338</li>
+                                        <li className="list-inline-item"><i className="las la-phone"></i>+971 (04) 263 3338</li>
                                         <li className="list-inline-item"><i className="las la-envelope"></i>Markazalhuda@gmail.com</li>
                                         <li className="list-inline-item"><i className="las la-map-marker"></i>Al MizharAl Mizhar 1 - Dubai.
                                     </li>
@@ -86,7 +86,7 @@ class HeaderTwo extends Component {
                                                 <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/contact"}>Contact</Link></li>
                                                 <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/faq"}>Faq</Link></li>
                                                 <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/404"}>404</Link></li>
-                                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/coming-soon"}>Coming Soon</Link></li>
+                                                
                                             </ul>
                                         </li>
                                         <li className="nav-item dropdown">
