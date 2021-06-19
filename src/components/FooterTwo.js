@@ -54,9 +54,9 @@ function FooterTwo() {
                                 <img src={process.env.PUBLIC_URL + "/assets/images/f-logo.png"} alt="" className="img-fluid" />
                                 <p>Lorem ipsum dolor sit amet, consectet adipisicing elit. Saepe porro neque a nam null quos.</p>
                                 <ul className="list-unstyled">
-                                    <li><i className="las la-map-marker"></i>795 South Park Avenue, CA 94107</li>
-                                    <li><i className="las la-envelope"></i>enquery@domain.com</li>
-                                    <li><i className="las la-phone"></i>+1 908 875 7678</li>
+                                    <li><i className="las la-map-marker"></i>Al MizharAl Mizhar 1 - Dubai.</li>
+                                    <li><i className="las la-envelope"></i>Markazalhuda@gmail.com</li>
+                                    <li><i className="las la-phone"></i>+971 263 3338</li>
                                 </ul>
                             </div>
                         </Col>
@@ -120,13 +120,13 @@ function FooterTwo() {
                         </Col>
                         <Col md="12">
                             <div className="copytext-area text-center">
-                                <p>Copyright &copy; 2017 | Designed With <i className="las la-heart"></i> by <a href={process.env.PUBLIC_URL + "/"} target="_blank" rel="noopener noreferrer">SnazzyTheme</a></p>
+                                <p>Copyright &copy; 2017 | Markazalhuda</p>
                                 <ul className="social list-unstyled list-inline">
-                                    <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-facebook-f"></i></a></li>
+                                    <li className="list-inline-item"><a href="https://www.facebook.com/markazalhuda" target="_blank"rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
                                     <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-twitter"></i></a></li>
-                                    <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-linkedin-in"></i></a></li>
+                                    
                                     <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-youtube"></i></a></li>
-                                    <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-dribbble"></i></a></li>
+                                    
                                 </ul>
                             </div>
                         </Col>
