@@ -429,9 +429,7 @@ function CourseDetails() {
                                                 <button type="button" className="enroll-btn">Enroll Course</button>
                                             </div>
                                         </Col>
-                                        <Col md="12">
-                                            <PopularCourse />
-                                        </Col>
+                                        
                                         <Col md="12">
                                             <CourseTag />
                                         </Col>

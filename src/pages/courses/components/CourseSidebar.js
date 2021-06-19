@@ -20,9 +20,7 @@ class CourseSidebar extends Component {
                     <Col md="12">
                         <CoursePrice />
                     </Col>
-                    <Col md="12">
-                        <PopularCourse />
-                    </Col>
+                    
                     <Col md="12">
                         <CourseTag />
                     </Col>
