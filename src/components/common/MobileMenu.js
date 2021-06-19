@@ -59,7 +59,7 @@ function MobileMenu() {
                         <Col md="0" sm="12">
                             <div className="mb-topbar d-flex justify-content-between">
                                 <div className="topbar-item">
-                                    <p><i className="las la-phone"></i>+1 (396) 486 4709</p>
+                                    <p><i className="las la-phone"></i>+971 263 3338</p>
                                 </div>
                                 <div className="topbar-item">
                                     <ul className="list-unstyled list-inline">

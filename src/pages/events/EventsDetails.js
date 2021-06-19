@@ -122,7 +122,7 @@ class EventDetails extends Component {
                                                         <li>Seat: <span>220</span></li>
                                                         <li>Place: <span>Ontario,CA</span></li>
                                                         <li>Organizer: <span>David Young</span></li>
-                                                        <li>Phone: <span>+1 (396) 486 4709</span></li>
+                                                        <li>Phone: <span></span></li>
                                                         <li>Email: <span>email@me.com</span></li>
                                                         <li>Website: <span>www.mydomain.com</span></li>
                                                     </ul>

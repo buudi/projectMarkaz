@@ -56,7 +56,7 @@ class InstructorDetails extends Component {
                                     <div className="instructor-img">
                                         <img src={process.env.PUBLIC_URL + `/assets/images/team-7.jpg`} alt="" className="img-fluid" />
                                         <ul className="list-unstyled getintouch">
-                                            <li><i className="las la-phone"></i> +1 (396) 486 4709</li>
+                                            <li><i className="las la-phone"></i></li>
                                             <li><i className="lar la-envelope"></i> mail@contactme.com</li>
                                             <li><i className="lab la-skype"></i> contact.me</li>
                                         </ul>

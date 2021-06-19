@@ -26,10 +26,10 @@ class Header extends Component {
                             <Col lg="6" md="7">
                                 <div className="bar-right d-flex justify-content-end">
                                     <ul className="list-unstyled list-inline bar-social">
-                                        <li className="list-inline-item"><a href="https://www.facebook.com/markazalhuda" target="_blank"rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
+                                        <li className="list-inline-item"><a href="https://www.facebook.com/markazalhuda"><i className="fab fa-facebook-f"></i></a></li>
                                         <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-twitter"></i></a></li>
                                         
-                                        <li className="list-inline-item"><a href="https://www.instagram.com/markazalhuda/" target="_blank"rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                                        <li className="list-inline-item"><a href="https://www.instagram.com/markazalhuda/"><i className="fab fa-instagram"></i></a></li>
                                     </ul>
                                     <ul className="list-unstyled list-inline bar-lang">
                                         <li className="list-inline-item">
@@ -148,24 +148,12 @@ class Header extends Component {
                                                     <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/blog-details"}>Blog Details</Link></li>
                                                 </ul>
                                             </li>
-                                            <li className="nav-item dropdown">
-                                                <Link className="nav-link dropdown-toggle" to={process.env.PUBLIC_URL + "/"} data-toggle="dropdown">Shop <i className="las la-angle-down"></i></Link>
-                                                <ul className="dropdown list-unstyled">
-                                                    <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/products"}>Products</Link></li>
-                                                    <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/product-details"}>Product Details</Link></li>
-                                                    <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/cart"}>Cart</Link></li>
-                                                </ul>
-                                            </li>
                                         </ul>
                                         <ul className="nav search-cart-bar">
                                             <li className="nav-item search-box">
                                                 <Search />
                                             </li>
-                                            <li className="nav-item cart-box">
-                                                <Link to={process.env.PUBLIC_URL + "/cart"} className="nav-link nav-cart">
-                                                    <i className="las la-shopping-bag"></i>
-                                                </Link>
-                                            </li>
+                                            
                                             <li className="nav-item side-box">
                                                 <Sidebar />
                                             </li>
