@@ -27,6 +27,7 @@ import ProductDetails from './pages/shop/ProductDetails';
 import Cart from './pages/shop/Cart';
 
 function App() {
+    console.log(process.env);
     return (
         <Router>
             <GlobalStyle />
