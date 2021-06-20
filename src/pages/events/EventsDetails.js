@@ -129,7 +129,6 @@ class EventDetails extends Component {
                                                     <button type="button" className="buy-btn">JOIN</button>
                                                 </div>
                                             </Col>
-                                            
                                             <Col md="12">
                                                 <CourseTag />
                                             </Col>
