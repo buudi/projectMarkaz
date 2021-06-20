@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useContext, useState} from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Dropdown } from 'react-bootstrap';
 import Search from './common/Search';
@@ -6,10 +6,11 @@ import Sidebar from './common/Sidebar';
 import StickyMenu from './common/StickyMenu';
 import MobileMenu from './common/MobileMenu';
 import { Styles } from "./styles/header.js";
+import { LangContext } from './common/contexts/LangContext';
 
 const Header = () => {
     
-    const [lang, setLang] = useState("ar");
+    const {lang, setLang} = useContext(LangContext);
 
     const toggleArabic = () => {
         setLang("ar");

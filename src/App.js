@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ScrollToTop from './helper/ScrollToTop';
 import { GlobalStyle } from "./components/common/styles/global.js";
@@ -25,38 +25,42 @@ import BlogDetails from './pages/blog/BlogDetails';
 import Product from './pages/shop/Products';
 import ProductDetails from './pages/shop/ProductDetails';
 import Cart from './pages/shop/Cart';
+import { LangContext } from "./components/common/contexts/LangContext";
 
 function App() {
+    const [lang, setLang] = useState("ar");
     return (
-        <Router>
-            <GlobalStyle />
-            <ScrollToTop />
-            <Switch>
-                <Route exact path={`${process.env.PUBLIC_URL + "/"}`} component={HomeOne} />
-                <Route path={`${process.env.PUBLIC_URL + "/home-two"}`} component={HomeTwo} />
-                <Route path={`${process.env.PUBLIC_URL + "/about"}`} component={About} />
-                <Route path={`${process.env.PUBLIC_URL + "/course-grid"}`} component={CourseGrid} />
-                <Route path={`${process.env.PUBLIC_URL + "/course-list"}`} component={CourseList} />
-                <Route path={`${process.env.PUBLIC_URL + "/course-details"}`} component={CourseDetails} />
-                <Route path={`${process.env.PUBLIC_URL + "/instructor"}`} component={Instructor} />
-                <Route path={`${process.env.PUBLIC_URL + "/instructor-details"}`} component={InstructorDetails} />
-                <Route path={`${process.env.PUBLIC_URL + "/gallery"}`} component={Gallery} />
-                <Route path={`${process.env.PUBLIC_URL + "/events"}`} component={Events} />
-                <Route path={`${process.env.PUBLIC_URL + "/event-details"}`} component={EventDetails} />
-                <Route path={`${process.env.PUBLIC_URL + "/login"}`} component={Login} />
-                <Route path={`${process.env.PUBLIC_URL + "/registration"}`} component={Register} />
-                <Route path={`${process.env.PUBLIC_URL + "/contact"}`} component={Contact} />
-                <Route path={`${process.env.PUBLIC_URL + "/faq"}`} component={Faq} />
-                <Route path={`${process.env.PUBLIC_URL + "/404"}`} component={PageNotFound} />
-                <Route path={`${process.env.PUBLIC_URL + "/coming-soon"}`} component={ComingSoon} />
-                <Route path={`${process.env.PUBLIC_URL + "/blog-classic"}`} component={BlogClassic} />
-                <Route path={`${process.env.PUBLIC_URL + "/blog-grid"}`} component={BlogGrid} />
-                <Route path={`${process.env.PUBLIC_URL + "/blog-details"}`} component={BlogDetails} />
-                <Route path={`${process.env.PUBLIC_URL + "/products"}`} component={Product} />
-                <Route path={`${process.env.PUBLIC_URL + "/product-details"}`} component={ProductDetails} />
-                <Route path={`${process.env.PUBLIC_URL + "/cart"}`} component={Cart} />
-            </Switch>
-        </Router>
+        <LangContext.Provider value={{lang, setLang}}>
+            <Router>
+                <GlobalStyle />
+                <ScrollToTop />
+                <Switch>
+                    <Route exact path={`${process.env.PUBLIC_URL + "/"}`} component={HomeOne} />
+                    <Route path={`${process.env.PUBLIC_URL + "/home-two"}`} component={HomeTwo} />
+                    <Route path={`${process.env.PUBLIC_URL + "/about"}`} component={About} />
+                    <Route path={`${process.env.PUBLIC_URL + "/course-grid"}`} component={CourseGrid} />
+                    <Route path={`${process.env.PUBLIC_URL + "/course-list"}`} component={CourseList} />
+                    <Route path={`${process.env.PUBLIC_URL + "/course-details"}`} component={CourseDetails} />
+                    <Route path={`${process.env.PUBLIC_URL + "/instructor"}`} component={Instructor} />
+                    <Route path={`${process.env.PUBLIC_URL + "/instructor-details"}`} component={InstructorDetails} />
+                    <Route path={`${process.env.PUBLIC_URL + "/gallery"}`} component={Gallery} />
+                    <Route path={`${process.env.PUBLIC_URL + "/events"}`} component={Events} />
+                    <Route path={`${process.env.PUBLIC_URL + "/event-details"}`} component={EventDetails} />
+                    <Route path={`${process.env.PUBLIC_URL + "/login"}`} component={Login} />
+                    <Route path={`${process.env.PUBLIC_URL + "/registration"}`} component={Register} />
+                    <Route path={`${process.env.PUBLIC_URL + "/contact"}`} component={Contact} />
+                    <Route path={`${process.env.PUBLIC_URL + "/faq"}`} component={Faq} />
+                    <Route path={`${process.env.PUBLIC_URL + "/404"}`} component={PageNotFound} />
+                    <Route path={`${process.env.PUBLIC_URL + "/coming-soon"}`} component={ComingSoon} />
+                    <Route path={`${process.env.PUBLIC_URL + "/blog-classic"}`} component={BlogClassic} />
+                    <Route path={`${process.env.PUBLIC_URL + "/blog-grid"}`} component={BlogGrid} />
+                    <Route path={`${process.env.PUBLIC_URL + "/blog-details"}`} component={BlogDetails} />
+                    <Route path={`${process.env.PUBLIC_URL + "/products"}`} component={Product} />
+                    <Route path={`${process.env.PUBLIC_URL + "/product-details"}`} component={ProductDetails} />
+                    <Route path={`${process.env.PUBLIC_URL + "/cart"}`} component={Cart} />
+                </Switch>
+            </Router>
+        </LangContext.Provider>
     )
 }
 
