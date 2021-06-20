@@ -130,9 +130,6 @@ class EventDetails extends Component {
                                                 </div>
                                             </Col>
                                             <Col md="12">
-                                                <PopularCourse />
-                                            </Col>
-                                            <Col md="12">
                                                 <CourseTag />
                                             </Col>
                                         </Row>
