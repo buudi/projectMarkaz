@@ -126,7 +126,7 @@ class EventDetails extends Component {
                                                         <li>Email: <span>email@me.com</span></li>
                                                         <li>Website: <span>www.mydomain.com</span></li>
                                                     </ul>
-                                                    <button type="button" className="buy-btn">Buy Ticket</button>
+                                                    <button type="button" className="buy-btn">JOIN</button>
                                                 </div>
                                             </Col>
                                             <Col md="12">

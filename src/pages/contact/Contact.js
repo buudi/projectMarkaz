@@ -102,7 +102,7 @@ function Contact() {
                                     </div>
                                     <div className="box-content">
                                         <h5>Email Address</h5>
-                                        <p>Markazalhuda@gmail.com<br />Markazalhuda@yahoo.com</p>
+                                        <p>Markazalhudadubai@gmail.com<br />Markazalhuda@yahoo.com</p>
                                     </div>
                                 </div>
                                 <div className="contact-icon-box d-flex">
@@ -111,7 +111,7 @@ function Contact() {
                                     </div>
                                     <div className="box-content">
                                         <h5>Phone Number</h5>
-                                        <p>+971 (04) 263 3338<br />+971 (04) 265 7438</p>
+                                        <p>+971 (04) 263 3338<br/>+971 (04) 265 7438</p>
                                     </div>
                                 </div>
                                 <div className="contact-social">

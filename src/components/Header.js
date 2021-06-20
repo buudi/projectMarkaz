@@ -103,7 +103,7 @@ class Header extends Component {
                                         </div>
                                         <div className="box-content">
                                             <p>{this.state.lang === "ar" ? (<>تواصل معنا</>):(<>Contact Us</>)}</p>
-                                            <span>Markazalhuda@gmail.com</span>
+                                            <span>Markazalhudadubai@gmail.com</span>
                                         </div>
                                     </div>
                                     <div className="apply-btn">

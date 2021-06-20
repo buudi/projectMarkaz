@@ -19,7 +19,7 @@ class HeaderTwo extends Component {
                                 <div className="bar-left">
                                     <ul className="list-unstyled list-inline">
                                         <li className="list-inline-item"><i className="las la-phone"></i>+971 (04) 263 3338</li>
-                                        <li className="list-inline-item"><i className="las la-envelope"></i>Markazalhuda@gmail.com</li>
+                                        <li className="list-inline-item"><i className="las la-envelope"></i>Markazalhudadubai@gmail.com</li>
                                         <li className="list-inline-item"><i className="las la-map-marker"></i>Al MizharAl Mizhar 1 - Dubai.
                                     </li>
                                     </ul>

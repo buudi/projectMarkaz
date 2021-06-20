@@ -55,7 +55,7 @@ function FooterTwo() {
                                 <p>Lorem ipsum dolor sit amet, consectet adipisicing elit. Saepe porro neque a nam null quos.</p>
                                 <ul className="list-unstyled">
                                     <li><i className="las la-map-marker"></i>Al MizharAl Mizhar 1 - Dubai.</li>
-                                    <li><i className="las la-envelope"></i>Markazalhuda@gmail.com</li>
+                                    <li><i className="las la-envelope"></i>Markazalhudadubai@gmail.com</li>
                                     <li><i className="las la-phone"></i>+971 (04) 263 3338</li>
                                 </ul>
                             </div>
