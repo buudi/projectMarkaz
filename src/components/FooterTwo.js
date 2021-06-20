@@ -56,7 +56,7 @@ function FooterTwo() {
                                 <ul className="list-unstyled">
                                     <li><i className="las la-map-marker"></i>Al MizharAl Mizhar 1 - Dubai.</li>
                                     <li><i className="las la-envelope"></i>Markazalhuda@gmail.com</li>
-                                    <li><i className="las la-phone"></i>+971 263 3338</li>
+                                    <li><i className="las la-phone"></i>+971 (04) 263 3338</li>
                                 </ul>
                             </div>
                         </Col>

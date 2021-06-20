@@ -42,10 +42,10 @@ class Header extends Component {
                             <Col lg="6" md="7">
                                 <div className="bar-right d-flex justify-content-end">
                                     <ul className="list-unstyled list-inline bar-social">
-                                        <li className="list-inline-item"><a href="https://www.facebook.com/markazalhuda"><i className="fab fa-facebook-f"></i></a></li>
+                                        <li className="list-inline-item"><a href="https://www.facebook.com/markazalhuda" target="_blank"rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
                                         <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-twitter"></i></a></li>
                                         
-                                        <li className="list-inline-item"><a href="https://www.instagram.com/markazalhuda/"><i className="fab fa-instagram"></i></a></li>
+                                        <li className="list-inline-item"><a href="https://www.instagram.com/markazalhuda/" target="_blank"rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
                                     </ul>
                                     <ul className="list-unstyled list-inline bar-lang">
                                         <li className="list-inline-item">
@@ -90,7 +90,7 @@ class Header extends Component {
                                         </div>
                                         <div className="box-content">
                                             <p>Office Number</p>
-                                            <span>(971) 263 3338</span>
+                                            <span>(971) (04) 263 3338</span>
                                         </div>
                                     </div>
                                     <div className="emcontact-box d-flex">
@@ -136,7 +136,7 @@ class Header extends Component {
                                                     <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/contact"}>Contact</Link></li>
                                                     <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/faq"}>Faq</Link></li>
                                                     <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/404"}>404</Link></li>
-                                                    <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/coming-soon"}>Coming Soon</Link></li>
+                                                   
                                                 </ul>
                                             </li>
                                             <li className="nav-item dropdown">
