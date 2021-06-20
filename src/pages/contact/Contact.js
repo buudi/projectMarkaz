@@ -102,7 +102,7 @@ function Contact() {
                                     </div>
                                     <div className="box-content">
                                         <h5>Email Address</h5>
-                                        <p>Markazalhuda@gmail.com<br />Markazalhuda@yahoo.com</p>
+                                        <p>Markazalhudadubai@gmail.com<br />Markazalhuda@yahoo.com</p>
                                     </div>
                                 </div>
                                 <div className="contact-icon-box d-flex">
