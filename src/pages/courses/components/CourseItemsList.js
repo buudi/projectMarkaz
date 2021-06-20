@@ -26,9 +26,7 @@ class CourseItemList extends Component {
                                                 <span>{data.authorCourses}</span>
                                             </div>
                                         </div>
-                                        <div className="course-price">
-                                            <p>{data.price}</p>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <div className="course-content">
