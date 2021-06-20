@@ -5,6 +5,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import ModalVideo from 'react-modal-video';
 import CountUp from 'react-countup';
 import { Styles } from "./styles/aboutUs.js";
+import { LangContext } from "./common/contexts/LangContext";
+
 
 class AboutUs extends Component {
     constructor() {
@@ -19,7 +21,10 @@ class AboutUs extends Component {
         this.setState({ isOpen: true })
     }
 
+    static contextType = LangContext;
+
     render() {
+        const lang = this.context.lang;
         return (
             <Styles>
                 {/* About Us */}
@@ -38,8 +43,20 @@ class AboutUs extends Component {
                             </Col>
                             <Col md="6">
                                 <div className="about-content">
-                                    <h4 className="about-title">{Datas.title}</h4>
-                                    <p className="about-para">{Datas.desc1}<span>{Datas.desc2}</span></p>
+                                    {lang === "ar" ? (
+                                        <>
+                                            <h4 className="about-title">{Datas.titleArabic}</h4>
+                                    <p className="about-para">{Datas.desc1Arabic}<span>{Datas.desc2Arabic}</span></p>
+                                        </>
+                                    ):(
+                                        <>
+                                        <h4 className="about-title">{Datas.title}</h4>
+                                        <p className="about-para">{Datas.desc1}<span>{Datas.desc2}</span></p>
+                                    </>
+                                    )
+                                    
+                                }
+                                  
                                     <Row>
                                         <Col sm="4">
                                             <div className="counter-box box1 text-center">
