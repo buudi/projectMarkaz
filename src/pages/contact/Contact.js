@@ -93,7 +93,7 @@ function Contact() {
                                     </div>
                                     <div className="box-content">
                                         <h5>Our Location</h5>
-                                        <p>795 South Park Avenue, Long Island, Newyork, NY 94107.</p>
+                                        <p>Al MizharAl Mizhar 1 - Dubai. | Al Mamzar</p>
                                     </div>
                                 </div>
                                 <div className="contact-icon-box d-flex">
@@ -102,7 +102,7 @@ function Contact() {
                                     </div>
                                     <div className="box-content">
                                         <h5>Email Address</h5>
-                                        <p>info@mydomain.com<br />enquery@edu.com</p>
+                                        <p>Markazalhuda@gmail.com<br />Markazalhuda@yahoo.com</p>
                                     </div>
                                 </div>
                                 <div className="contact-icon-box d-flex">
@@ -111,16 +111,16 @@ function Contact() {
                                     </div>
                                     <div className="box-content">
                                         <h5>Phone Number</h5>
-                                        <p>+971 263 3338<br />+971 263 3338</p>
+                                        <p>+971 (04) 263 3338<br />+971 (04) 265 7438</p>
                                     </div>
                                 </div>
                                 <div className="contact-social">
                                     <ul className="social list-unstyled list-inline">
-                                        <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-facebook-f"></i></a></li>
+                                        <li className="list-inline-item"><a href="https://www.facebook.com/markazalhuda" target="_blank"rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
                                         <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-twitter"></i></a></li>
-                                        <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-linkedin-in"></i></a></li>
+                                        
                                         <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-youtube"></i></a></li>
-                                        <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-dribbble"></i></a></li>
+                                        
                                     </ul>
                                 </div>
                             </Col>

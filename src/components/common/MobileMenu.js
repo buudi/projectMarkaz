@@ -123,7 +123,7 @@ function MobileMenu() {
                                 <li><Link to={process.env.PUBLIC_URL + "/contact"}>Contact</Link></li>
                                 <li><Link to={process.env.PUBLIC_URL + "/faq"}>Faq</Link></li>
                                 <li><Link to={process.env.PUBLIC_URL + "/404"}>404</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/coming-soon"}>Coming Soon</Link></li>
+                                
                             </ul>
                         </div>
                     </div>

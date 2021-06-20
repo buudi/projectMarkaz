@@ -20,20 +20,14 @@ class Footer extends Component {
                                     <ul className="list-unstyled">
                                         <li><i className="las la-map-marker"></i>Al MizharAl Mizhar 1 - Dubai.</li>
                                         <li><i className="las la-envelope"></i>Markazalhuda@gmail.com</li>
-                                        <li><i className="las la-phone"></i>+971 263 3338</li>
+                                        <li><i className="las la-phone"></i>+971 (04) 263 3338</li>
                                     </ul>
                                 </div>
                             </Col>
                             <Col md="4">
                                 <div className="f-links">
                                     <h5>Useful Links</h5>
-                                    <ul className="list-unstyled">
-                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>General Info</Link></li>
-                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>Help Center</Link></li>
-                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>Our Services</Link></li>
-                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>Privacy Policy</Link></li>
-                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>Online Support</Link></li>
-                                    </ul>
+                                   
                                     <ul className="list-unstyled">
                                         <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>General Info</Link></li>
                                         <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>Help Center</Link></li>
@@ -76,14 +70,14 @@ class Footer extends Component {
                         <Row>
                             <Col md="6">
                                 <div className="copy-text">
-                                    <p>Copyright &copy; 2017</p>
+                                    <p>Copyright &copy; 2017 | Markazalhuda</p>
                                 </div>
                             </Col>
                             <Col md="6" className="text-right">
                                 <ul className="social list-unstyled list-inline">
                                     <li className="list-inline-item"><a href="https://www.facebook.com/markazalhuda" target="_blank"rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
                                     <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-twitter"></i></a></li>
-                                    <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-linkedin-in"></i></a></li>
+                                    
                                     <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-youtube"></i></a></li>
                                     
                                 </ul>
