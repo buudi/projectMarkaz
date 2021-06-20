@@ -3,6 +3,7 @@ import Datas from '../data/hero/hero-image.json';
 import { Container, Row, Col } from 'react-bootstrap';
 import ModalVideo from 'react-modal-video';
 import { Styles } from "./styles/heroImage.js";
+import { LangContext } from "./common/contexts/LangContext";
 
 class HeroImage extends Component {
     constructor() {
@@ -17,7 +18,10 @@ class HeroImage extends Component {
         this.setState({ isOpen: true })
     }
 
+    static contextType = LangContext;
+
     render() {
+        const lang = this.context.lang;
         return (
             <Styles>
                 {/* Hero Image */}
@@ -29,8 +33,18 @@ class HeroImage extends Component {
                                 <Row>
                                     <Col md="12">
                                         <div className="hero-box text-center">
-                                            <h1>{Datas.heroTitle}</h1>
-                                            <p>{Datas.heroSubtitle}</p>
+                                            {lang === "ar" ? (
+                                                <>
+                                                    <h1>{Datas.heroTitleArabic}</h1>
+                                                    <p>{Datas.heroSubtitleArabic}</p>
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <h1>{Datas.heroTitle}</h1>
+                                                    <p>{Datas.heroSubtitle}</p>
+                                                 </>
+                                            )}
+                                            
                                             <div className="video-player">
                                                 <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='uXFUl0KcIkA' onClose={() => this.setState({ isOpen: false })} />
                                                 <button onClick={this.openModal} className="play-button"><i className="las la-play"></i></button>
