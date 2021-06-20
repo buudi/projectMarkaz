@@ -111,7 +111,7 @@ function Contact() {
                                     </div>
                                     <div className="box-content">
                                         <h5>Phone Number</h5>
-                                        <p>+971 263 3338<br />+971 263 3338</p>
+                                        <p>+971 (04) 263 3338<br />+971 (04) 263 3338</p>
                                     </div>
                                 </div>
                                 <div className="contact-social">

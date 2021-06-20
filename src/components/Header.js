@@ -69,7 +69,7 @@ class Header extends Component {
                                         </div>
                                         <div className="box-content">
                                             <p>Office Number</p>
-                                            <span>(971) 263 3338</span>
+                                            <span>(971) (04) 263 3338</span>
                                         </div>
                                     </div>
                                     <div className="emcontact-box d-flex">
@@ -78,7 +78,7 @@ class Header extends Component {
                                         </div>
                                         <div className="box-content">
                                             <p>Enquery Us</p>
-                                            <span>Markazalhuda@gmail.com</span>
+                                            <span>Markazalhudadubai@gmail.com</span>
                                         </div>
                                     </div>
                                     <div className="apply-btn">
