@@ -8,6 +8,22 @@ import MobileMenu from './common/MobileMenu';
 import { Styles } from "./styles/header.js";
 
 class Header extends Component {
+    state = {
+        lang: "ar",
+    }
+
+    toggleArabic = () => {
+        this.setState({
+            lang: "ar",
+        })
+    }
+
+    toggleEnglish = () => {
+        this.setState({
+            lang: "en",
+        })
+    }
+
     render() {
         return (
             <Styles>
@@ -18,7 +34,7 @@ class Header extends Component {
                             <Col lg="6" md="5">
                                 <div className="bar-left">
                                     <ul className="list-unstyled list-inline">
-                                        <li className="list-inline-item"><i className="las la-map-marker"></i>Al MizharAl Mizhar 1 - Dubai.</li>
+                                        <li className="list-inline-item"><i className="las la-map-marker"></i>{this.state.lang === "ar" ? (<>المزهر 1- دبي</>) : (<>Al Mizhar 1 - Dubai</>)}</li>
                                         <li className="list-inline-item"><Link to={process.env.PUBLIC_URL + "/faq"}>Have Questions</Link></li>
                                     </ul>
                                 </div>
@@ -34,11 +50,16 @@ class Header extends Component {
                                     <ul className="list-unstyled list-inline bar-lang">
                                         <li className="list-inline-item">
                                             <Dropdown>
+                                            {this.state.lang === "ar" ? (
                                                 <Dropdown.Toggle as="a"><img src={process.env.PUBLIC_URL + "/assets/images/ae.png"} alt="" />Arabic<i className="las la-angle-down"></i></Dropdown.Toggle>
+                                            ) : (
+                                                <Dropdown.Toggle as="a"><img src={process.env.PUBLIC_URL + "/assets/images/us.png"} alt="" />English<i className="las la-angle-down"></i></Dropdown.Toggle>
+                                            )}
                                                 <Dropdown.Menu as="ul">
-                                                    <Dropdown.Item as="li"><img src={process.env.PUBLIC_URL + "/assets/images/ae.png"} alt="" /> Arabic</Dropdown.Item>
-                                                    <Dropdown.Item as="li"><img src={process.env.PUBLIC_URL + "/assets/images/us.png"} alt="" /> English</Dropdown.Item>
+                                                    <Dropdown.Item as="li" onClick={this.toggleArabic}><img src={process.env.PUBLIC_URL + "/assets/images/ae.png"} alt="" /> Arabic</Dropdown.Item>
+                                                    <Dropdown.Item as="li" onClick={this.toggleEnglish}><img src={process.env.PUBLIC_URL + "/assets/images/us.png"} alt="" /> English</Dropdown.Item>
                                                 </Dropdown.Menu>
+                                                
                                             </Dropdown>
                                         </li>
                                     </ul>
