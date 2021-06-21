@@ -4,9 +4,12 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import BackToTop from './common/BackToTop';
 import { Styles } from "./styles/footerOne.js";
+import { LangContext} from "./common/contexts/LangContext";
 
 class Footer extends Component {
+    static contextType = LangContext;
     render() {
+        const lang = this.context.lang;
         return (
             <Styles>
                 {/* Footer Area */}
@@ -26,14 +29,17 @@ class Footer extends Component {
                             </Col>
                             <Col md="4">
                                 <div className="f-links">
-                                    <h5>Useful Links</h5>
+                                    <h5>{lang === "ar" ? (<>روابط مفيدة</>):(<>USEFUL LINKS</>)}</h5>
                                    
                                     <ul className="list-unstyled">
-                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>General Info</Link></li>
-                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>Help Center</Link></li>
-                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>Our Services</Link></li>
-                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>Privacy Policy</Link></li>
-                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>Online Support</Link></li>
+                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>{lang === "ar" ? ( <> معلومات عامة
+</> ):( <>General Information</>)}</Link></li>
+                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>{lang === "ar" ? ( <>مركز المساعدة
+</> ):( <>Help Center</>)}</Link></li>
+                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>{lang === "ar" ? ( <>خدمتنا</> ):( <>Our Services</>)}</Link></li>
+                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>{lang === "ar" ? ( <>سياسة خاصة
+</> ):( <>Privacy Policy</>)}</Link></li>
+                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>{lang === "ar" ? ( <>الدعم الالكتروني</> ):( <>Online Support</>)}</Link></li>
                                     </ul>
                                 </div>
                             </Col>
