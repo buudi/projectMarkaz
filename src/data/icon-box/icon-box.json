@@ -3,21 +3,27 @@
         "id": "1",
         "uniqClass": "box-icon box1",
         "boxIcon": "flaticon-thumbs-like",
+        "titleArabic": "الدورات الشائعة",
         "title": "Popular Courses",
-        "subTitle": "Lorem ipsum dolor sit, amet consectetur elit."
+        "subTitle": "Lorem ipsum dolor sit, amet consectetur elit.",
+        "subTitleArabic":"مرحبا يا مرحبا يا مرحبا يا مرحبا يا مرحبا يا مرحبا"
     },
     {
         "id": "2",
         "uniqClass": "box-icon box2",
         "boxIcon": "flaticon-reading",
+        "titleArabic": "مكتبة حديثة",
         "title": "Modern Library",
-        "subTitle": "Lorem ipsum dolor sit, amet consectetur elit."
+        "subTitle": "Lorem ipsum dolor sit, amet consectetur elit.",
+        "subTitleArabic":"مرحبا يا مرحبا يا مرحبا يا مرحبا يا مرحبا يا مرحبا"
     },
     {
         "id": "3",
         "uniqClass": "box-icon box3",
         "boxIcon": "flaticon-teacher",
+        "titleArabic": "معلمون محترفون",
         "title": "Qualified Teacher",
-        "subTitle": "Lorem ipsum dolor sit, amet consectetur elit."
+        "subTitle": "Lorem ipsum dolor sit, amet consectetur elit.",
+        "subTitleArabic":"مرحبا يا مرحبا يا مرحبا يا مرحبا يا مرحبا يا مرحبا"
     }
 ]

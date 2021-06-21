@@ -61,7 +61,8 @@ class AboutUs extends Component {
                                         <Col sm="4">
                                             <div className="counter-box box1 text-center">
                                                 <h3><CountUp end={970} duration={5} delay={1.5} /><i className="las la-plus"></i></h3>
-                                                <p>Happy Students</p>
+                                                {lang === "ar" ? (<p>الطلاب السعداء</p>):(<p>Happy Students</p>)}
+                                                
                                             </div>
                                         </Col>
                                         <Col sm="4">
