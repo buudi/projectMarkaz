@@ -4,9 +4,13 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import Swiper from 'react-id-swiper';
 import { Styles } from "./styles/heroSlider.js";
+import {LangContext} from "../components/common/contexts/LangContext";
 
 class HeroSlider extends Component {
+
+    static contextType = LangContext;
     render() {
+        const lang = this.context.lang;
         const settings = {
             slidesPerView: 1,
             loop: true,
@@ -53,8 +57,8 @@ class HeroSlider extends Component {
                                                                 <h1>{data.desc}</h1>
                                                             </div>
                                                             <div className="slider-btn">
-                                                                <Link className="slider-btn1" to={process.env.PUBLIC_URL + `/${data.btnOneLink}`}>Our Courses</Link>
-                                                                <Link className="slider-btn2" to={process.env.PUBLIC_URL + `/${data.btnTwoLink}`}>Contact Us</Link>
+                                                                <Link className="slider-btn1" to={process.env.PUBLIC_URL + `/${data.btnOneLink}`}>{lang === "ar" ? (<> دوراتنا</>):(<>Our Courses</>)}</Link>
+                                                                <Link className="slider-btn2" to={process.env.PUBLIC_URL + `/${data.btnTwoLink}`}>{lang === "ar" ? (<> اتصل بنا</>):(<>Contact Us</>)}</Link>
                                                             </div>
                                                         </div>
                                                     </Col>
