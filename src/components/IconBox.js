@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import Datas from '../data/icon-box/icon-box.json';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Styles } from "./styles/iconBox.js";
+import { LangContext } from "./common/contexts/LangContext";
 
 class IconBox extends Component {
+    static contextType = LangContext;
     render() {
+        const lang = this.context.lang;
         return (
             <Styles>
                 {/* Icon Box */}
@@ -20,8 +23,18 @@ class IconBox extends Component {
                                                     <i className={data.boxIcon}></i>
                                                 </div>
                                                 <div className="box-title">
-                                                    <h6>{data.title}</h6>
-                                                    <p>{data.subTitle}</p>
+                                                    {lang === "ar" ? (
+                                                        <>
+                                                            <h6>{data.titleArabic}</h6>
+                                                            <p>{data.subTitleArabic}</p>
+                                                        </>
+                                                    ) : (
+                                                        <>
+                                                            <h6>{data.title}</h6>
+                                                            <p>{data.subTitle}</p>
+                                                        </>
+                                                    )}
+                                                    
                                                 </div>
                                             </div>
                                         </div>
