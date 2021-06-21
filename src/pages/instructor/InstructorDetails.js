@@ -120,9 +120,7 @@ class InstructorDetails extends Component {
                                                                         <span>{data.authorCourses}</span>
                                                                     </div>
                                                                 </div>
-                                                                <div className="course-price">
-                                                                    <p>{data.price}</p>
-                                                                </div>
+                                                                
                                                             </div>
                                                         </Link>
                                                         <div className="course-content">

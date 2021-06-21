@@ -65,10 +65,7 @@ class ProductDetails extends Component {
                                                 <Link to={process.env.PUBLIC_URL + "/"}>( 07 Review )</Link>
                                             </div>
                                         </div>
-                                        <div className="product-price d-flex">
-                                            <p className="dc-price">$139.00</p>
-                                            <p className="ac-price">$199.00</p>
-                                        </div>
+                                        
                                         <div className="product-desc">
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam et dolorem nostrum quos placeat. Quibusdam necessitatibus adipisci dignissimos autem voluptate, dicta ullam, assumenda qui, corporis ut vero neque sapiente possimus.</p>
                                         </div>
