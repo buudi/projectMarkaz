@@ -80,54 +80,55 @@ const HeaderTwo  = () => {
                             <div className="menu-box d-flex justify-content-end">
                                 <ul className="nav menu-nav">
                                     <li className="nav-item dropdown active">
-                                        <Link className="nav-link dropdown-toggle" to={process.env.PUBLIC_URL + "/"} data-toggle="dropdown">Home <i className="las la-angle-down"></i></Link>
+                                        <Link className="nav-link dropdown-toggle" to={process.env.PUBLIC_URL + "/"} data-toggle="dropdown">{lang === "ar" ? (<> الصفحة الرئيسية </>):(<>HOME</>)}
+                                         <i className="las la-angle-down"></i></Link>
                                         <ul className="dropdown list-unstyled">
-                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/"}>Home Style 1</Link></li>
-                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/home-two"}>Home Style 2</Link></li>
+                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/"}>{lang === "ar"?(<>الرئيسة 1</>):(<>Home Style 1</>)}</Link></li>
+                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/home-two"}>{lang === "ar"?(<>الرئيسة 2</>):(<>Home Style 2</>)}</Link></li>
                                         </ul>
                                     </li>
                                     <li className="nav-item dropdown">
-                                        <Link className="nav-link dropdown-toggle" to={process.env.PUBLIC_URL + "/"} data-toggle="dropdown">Pages <i className="las la-angle-down"></i></Link>
+                                        <Link className="nav-link dropdown-toggle" to={process.env.PUBLIC_URL + "/"} data-toggle="dropdown">{lang === "ar"?(<> الصفحات </>):(<>PAGES</>)}<i className="las la-angle-down"></i></Link>
                                         <ul className="dropdown list-unstyled">
-                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/about"}>About Us</Link></li>
-                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/gallery"}>Gallery</Link></li>
-                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/login"}>Log In</Link></li>
-                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/registration"}>Registration</Link></li>
-                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/contact"}>Contact</Link></li>
-                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/faq"}>Faq</Link></li>
+                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/about"}>{lang === "ar"?(<> معلومات عنا </>):(<>About Us</>)}</Link></li>
+                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/gallery"}>{lang === "ar"?(<> الصور </>):(<>Gallery</>)}</Link></li>
+                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/login"}>{lang === "ar"? (<>تسجيل الدخول</>):(<>Log in</>)}</Link></li>
+                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/registration"}>{lang === "ar" ? (<>التسجيل</>) : (<>Registration</>)}</Link></li>
+                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/contact"}>{lang === "ar" ? (<>تواصل معنا</>):(<>Contact</>)}</Link></li>
+                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/faq"}>{lang==="ar" ? (<>أسئلة شائعة</>):(<>Faq</>)}</Link></li>
                                             <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/404"}>404</Link></li>
                                             
                                         </ul>
+                                        </li>
+                                        <li className="nav-item dropdown">
+                                            <Link className="nav-link dropdown-toggle" to={process.env.PUBLIC_URL + "/"} data-toggle="dropdown">{lang === "ar" ? (<>الدورات</>) : (<>Courses</>)} <i className="las la-angle-down"></i></Link>
+                                            <ul className="dropdown list-unstyled">
+                                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/course-grid"}>{lang === "ar" ? (<> قائمه الدورات</>) : (<>Course Grid</>)}</Link></li>
+                                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/course-list"}>{lang === "ar" ? (<> تفاصيل الدورات</>) : (<>Course List</>)}</Link></li>
+                                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/course-details"}>{lang === "ar" ? (<>الدورات</>) : (<>Course Details</>)}</Link></li>
+                                            </ul>
+                                        </li>
+                                        <li className="nav-item dropdown">
+                                            <Link className="nav-link dropdown-toggle" to={process.env.PUBLIC_URL + "/"} data-toggle="dropdown">{lang === "ar" ? (<>المدرسون</>) : (<>Instructors</>)} <i className="las la-angle-down"></i></Link>
+                                            <ul className="dropdown list-unstyled">
+                                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/instructor"}>{lang === "ar" ? (<>المعلمات</>) : (<>Instructors</>)}</Link></li>
+                                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/instructor-details"}>{lang === "ar" ? (<> تفاصيل المعلمات </>) : (<>Instructors Details</>)}</Link></li>
+                                            </ul>
+                                        </li>
+                                        <li className="nav-item dropdown">
+                                        <Link className="nav-link dropdown-toggle" to={process.env.PUBLIC_URL + "/"} data-toggle="dropdown">{lang === "ar" ? (<>الأحداث</>) : (<>Events</>)} <i className="las la-angle-down"></i></Link>
+                                            <ul className="dropdown list-unstyled">
+                                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/events"}>{lang === "ar" ? (<>الأحداث</>) : (<>Events</>)}</Link></li>
+                                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/event-details"}>{lang === "ar" ? (<>تفاصيل الحدث</>) : (<>Event Details</>)}</Link></li>
+                                            </ul>
                                     </li>
                                     <li className="nav-item dropdown">
-                                        <Link className="nav-link dropdown-toggle" to={process.env.PUBLIC_URL + "/"} data-toggle="dropdown">Courses <i className="las la-angle-down"></i></Link>
-                                        <ul className="dropdown list-unstyled">
-                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/course-grid"}>Course Grid</Link></li>
-                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/course-list"}>Course List</Link></li>
-                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/course-details"}>Course Details</Link></li>
-                                        </ul>
-                                    </li>
-                                    <li className="nav-item dropdown">
-                                        <Link className="nav-link dropdown-toggle" to={process.env.PUBLIC_URL + "/"} data-toggle="dropdown">Instructor <i className="las la-angle-down"></i></Link>
-                                        <ul className="dropdown list-unstyled">
-                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/instructor"}>Instructors</Link></li>
-                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/instructor-details"}>Instructor Details</Link></li>
-                                        </ul>
-                                    </li>
-                                    <li className="nav-item dropdown">
-                                        <Link className="nav-link dropdown-toggle" to={process.env.PUBLIC_URL + "/"} data-toggle="dropdown">Event <i className="las la-angle-down"></i></Link>
-                                        <ul className="dropdown list-unstyled">
-                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/events"}>Events</Link></li>
-                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/event-details"}>Event Details</Link></li>
-                                        </ul>
-                                    </li>
-                                    <li className="nav-item dropdown">
-                                        <Link className="nav-link dropdown-toggle" to={process.env.PUBLIC_URL + "/"} data-toggle="dropdown">Blog <i className="las la-angle-down"></i></Link>
-                                        <ul className="dropdown list-unstyled">
-                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/blog-classic"}>Blog Classic</Link></li>
-                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/blog-grid"}>Blog Grid</Link></li>
-                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/blog-details"}>Blog Details</Link></li>
-                                        </ul>
+                                            <Link className="nav-link dropdown-toggle" to={process.env.PUBLIC_URL + "/"} data-toggle="dropdown">{lang === "ar" ? (<>مقالات</>) : (<>Blog</>)} <i className="las la-angle-down"></i></Link>
+                                            <ul className="dropdown list-unstyled">
+                                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/blog-classic"}>{lang === "ar" ? (<>مقالات</>) : (<>Blog Classic</>)}</Link></li>
+                                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/blog-grid"}>{lang === "ar" ? (<>شبكة بلوق</>) : (<>Blog Grid</>)}</Link></li>
+                                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/blog-details"}>{lang === "ar" ? (<>تفاصيل المدونة</>) : (<>Blog Details</>)}</Link></li>
+                                            </ul>
                                     </li>
                                     
                                 </ul>
@@ -135,7 +136,7 @@ const HeaderTwo  = () => {
                                     <Search />
                                 </div>
                                 <div className="apply-btn">
-                                    <Link to={process.env.PUBLIC_URL + "/registration"}><i className="las la-clipboard-list"></i>Apply Now</Link>
+                                    <Link to={process.env.PUBLIC_URL + "/registration"}><i className="las la-clipboard-list"></i>{lang ==="ar"?(<>قدّم الأن</>):(<>Apply Now</>)}</Link>
                                 </div>
                             </div>
                         </Col>
