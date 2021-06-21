@@ -8,10 +8,14 @@ import TestimonialSlider from '../../components/TestimonialSlider';
 import FaqEvent from '../../components/FaqEvent';
 import FooterTwo from '../../components/FooterTwo';
 import { Styles } from "./styles/about.js";
+import {LangContext} from "../../components/common/contexts/LangContext";
+
 
 class About extends Component {
+    static contextType = LangContext;
 
     render() {
+        const lang = this.context.lang;
         return (
             <Styles>
                 {/* Main Wrapper */}
@@ -21,7 +25,8 @@ class About extends Component {
                     <HeaderTwo />
 
                     {/* Breadcroumb */}
-                    <BreadcrumbBox title="About Us" />
+                    {lang === "ar" ? (<BreadcrumbBox title="معلومات عنا"/>):( <BreadcrumbBox title="About Us" />)}
+                   
 
                     {/* About Area */}
                     <AboutUs />
