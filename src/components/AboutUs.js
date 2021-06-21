@@ -68,17 +68,18 @@ class AboutUs extends Component {
                                         <Col sm="4">
                                             <div className="counter-box box2 text-center">
                                                 <h3><CountUp end={130} duration={5} delay={1.5} /><i className="las la-plus"></i></h3>
-                                                <p>Teachers</p>
+                                                
+                                                {lang === "ar" ? (<p>المعلمون</p>):(<p>Teachers</p>)}
                                             </div>
                                         </Col>
                                         <Col sm="4">
                                             <div className="counter-box box3 text-center">
                                                 <h3><CountUp end={340} duration={5} delay={1.5} /><i className="las la-plus"></i></h3>
-                                                <p>Courses</p>
+                                                {lang === "ar" ? (<p>الدورات</p>):(<p>Courses</p>)}
                                             </div>
                                         </Col>
                                     </Row>
-                                    <Link className="readmore-btn" to={process.env.PUBLIC_URL + "/about"}>Read More</Link>
+                                    <Link className="readmore-btn" to={process.env.PUBLIC_URL + "/about"}>{lang === "ar" ? (<>اقرأ المزيد</>) : (<>Read More</>) }</Link>
                                 </div>
                             </Col>
                         </Row>
