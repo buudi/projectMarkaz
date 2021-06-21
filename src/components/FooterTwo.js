@@ -1,11 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Datas from '../data/footer/footer2.json';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import BackToTop from './common/BackToTop';
 import { Styles } from "./styles/footerTwo.js";
+import {LangContext} from "./common/contexts/LangContext";
+import { contextType } from 'google-map-react';
 
 function FooterTwo() {
+    const {lang} = useContext(LangContext);
     useEffect(() => {
         const form = document.getElementById("form4");
         const email = document.getElementById("email4");
@@ -42,7 +45,6 @@ function FooterTwo() {
             return /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(email);
         }
     });
-
     return (
         <Styles>
             {/* Footer Two */}
@@ -62,14 +64,18 @@ function FooterTwo() {
                         </Col>
                         <Col md="3">
                             <div className="f-links">
-                                <h5>Useful Links</h5>
-                                <ul className="list-unstyled">
-                                    <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>General Information</Link></li>
-                                    <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>Help Center</Link></li>
-                                    <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>Our Services</Link></li>
-                                    <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>Privacy Policy</Link></li>
-                                    <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>Online Support</Link></li>
-                                </ul>
+                            <h5>{lang === "ar" ? (<>روابط مفيدة</>):(<>USEFUL LINKS</>)}</h5>
+                                   
+                                   <ul className="list-unstyled">
+                                       <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>{lang === "ar" ? ( <> معلومات عامة
+</> ):( <>General Information</>)}</Link></li>
+                                       <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>{lang === "ar" ? ( <>مركز المساعدة
+</> ):( <>Help Center</>)}</Link></li>
+                                       <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>{lang === "ar" ? ( <>خدمتنا</> ):( <>Our Services</>)}</Link></li>
+                                       <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>{lang === "ar" ? ( <>سياسة خاصة
+</> ):( <>Privacy Policy</>)}</Link></li>
+                                       <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>{lang === "ar" ? ( <>الدعم الالكتروني</> ):( <>Online Support</>)}</Link></li>
+                                   </ul>
                             </div>
                         </Col>
                         <Col md="3">
