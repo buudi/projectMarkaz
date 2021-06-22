@@ -58,13 +58,18 @@ class TestimonialSlider extends Component {
                                         Datas.dataList.map((data, i) => (
                                             <div className="slider-item" key={i}>
                                                 <div className="desc">
-                                                    <h5>{data.testimonialTitle}</h5>
-                                                    <p>{data.testimonialDesc}</p>
+                                                {lang === "ar" ? (<><h5>{data.testimonialTitleArabic}</h5>
+                                                    <p>{data.testimonialDescArabic}</p></>):(<><h5>{data.testimonialTitle}</h5>
+                                                    <p>{data.testimonialDesc}</p></>)} 
+                                                    
                                                 </div>
                                                 <div className="writer">
                                                     <img src={process.env.PUBLIC_URL + `/assets/images/${data.authorImg}`} className="slider-image" alt={data.authorImg} />
-                                                    <h6>{data.authorName}</h6>
-                                                    <p>{data.authorTitle}</p>
+                                                    {lang === "ar" ? (<><h6>{data.authorNameArabic}</h6>
+                                                    <p>{data.authorTitleArabic}</p></>):(<><h6>{data.authorName}</h6>
+                                                    <p>{data.authorTitle}</p></>)} 
+                                                    
+                                                   
                                                 </div>
                                             </div>
                                         ))
