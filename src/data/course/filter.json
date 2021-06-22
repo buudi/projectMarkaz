@@ -1,5 +1,6 @@
 {
     "secTitle": "We Do What We Love To Do. Find the Best Course To Fit Your Needs.",
+    "secTitleArabic":"نفعل ما نحب أن نفعله. ابحث عن أفضل مسار يناسب احتياجاتك.",
     "dataList": [
         {
             "id": "1",
@@ -7,10 +8,14 @@
             "imgUrl": "course-1.jpg",
             "authorImg": "author.jpg",
             "authorName": "John Doe",
+            "authorNameArabic": "محمد ابو كبش",
             "authorCourses": "13 Courses",
+            "authorCoursesArabic": "13 دورة",
             "price": "$20",
             "courseTitle": "Php & mySql Programming",
+            "courseTitleArabic": "برمجة php و mysql",
             "courseDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur accusamus hic ea in autem debitis minima.",
+            "courseDescArabic": "بلا بلا بلا بلا بلا بلا بلا ب لا بلا لبا بال بال بال بال الب البا لبال ",
             "courseLink": "/course-details"
         },
         {
@@ -19,10 +24,14 @@
             "imgUrl": "course-2.jpg",
             "authorImg": "author.jpg",
             "authorName": "Jara Sen",
+            "authorNameArabic": "محمد ابو كبش",
             "authorCourses": "21 Courses",
+            "authorCoursesArabic": "21 دورة",
             "price": "$13",
             "courseTitle": "Microsoft Excel for Beginner",
+            "courseTitleArabic": "مايكروسوفت اكسل للمبتدئين",
             "courseDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur accusamus hic ea in autem debitis minima.",
+            "courseDescArabic": "بلا بلا بلا بلا بلا بلا بلا ب لا بلا لبا بال بال بال بال الب البا لبال ",
             "courseLink": "/course-details"
         },
         {
@@ -31,10 +40,14 @@
             "imgUrl": "course-3.jpg",
             "authorImg": "author.jpg",
             "authorName": "Kim Chang",
+            "authorNameArabic": "محمد ابو كبش",
             "authorCourses": "26 Courses",
+            "authorCoursesArabic": "26 دورة",
             "price": "$19",
             "courseTitle": "Digital Marketing Course",
+            "courseTitleArabic": "دورة التسويق الرقمي",
             "courseDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur accusamus hic ea in autem debitis minima.",
+            "courseDescArabic": "بلا بلا بلا بلا بلا بلا بلا ب لا بلا لبا بال بال بال بال الب البا لبال ",
             "courseLink": "/course-details"
         },
         {
@@ -43,10 +56,14 @@
             "imgUrl": "course-4.jpg",
             "authorImg": "author.jpg",
             "authorName": "Jim Hunt",
-            "authorCourses": "09 Courses",
+            "authorNameArabic": "محمد ابو كبش",
+            "authorCourses": "9 Courses",
+            "authorCoursesArabic": "9 دورة",
             "price": "$15",
             "courseTitle": "Zero to Hero in Python 3",
+            "courseTitleArabic": "من الصفر إلى البطل في بايثون 3",
             "courseDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur accusamus hic ea in autem debitis minima.",
+            "courseDescArabic": "بلا بلا بلا بلا بلا بلا بلا ب لا بلا لبا بال بال بال بال الب البا لبال ",
             "courseLink": "/course-details"
         },
         {
@@ -55,10 +72,14 @@
             "imgUrl": "course-5.jpg",
             "authorImg": "author.jpg",
             "authorName": "Sara Kim",
+            "authorNameArabic": "محمد ابو كبش",
             "authorCourses": "17 Courses",
+            "authorCoursesArabic": "17 دورة",
             "price": "$21",
             "courseTitle": "React JS, Angular & Vue JS",
+            "courseTitleArabic": "React JS و Angular و Vue JS",
             "courseDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur accusamus hic ea in autem debitis minima.",
+            "courseDescArabic": "بلا بلا بلا بلا بلا بلا بلا ب لا بلا لبا بال بال بال بال الب البا لبال ",
             "courseLink": "/course-details"
         },
         {
@@ -67,10 +88,14 @@
             "imgUrl": "course-6.jpg",
             "authorImg": "author.jpg",
             "authorName": "Shon Doe",
+            "authorNameArabic": "محمد ابو كبش",
             "authorCourses": "31 Courses",
+            "authorCoursesArabic": "31 دورة",
             "price": "$24",
             "courseTitle": "Laravel API Development",
+            "courseTitleArabic":"تطوير Laravel API",
             "courseDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur accusamus hic ea in autem debitis minima.",
+            "courseDescArabic": "بلا بلا بلا بلا بلا بلا بلا ب لا بلا لبا بال بال بال بال الب البا لبال ",
             "courseLink": "/course-details"
         }
     ]

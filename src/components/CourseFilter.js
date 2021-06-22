@@ -44,17 +44,17 @@ function CourseFilter() {
                     <Row>
                         <Col md="12">
                             <div className="sec-title text-center">
-                                <h4>{Datas.secTitle}</h4>
+                                {lang === "ar" ? (<h4>{Datas.secTitleArabic}</h4>) : (<h4>{Datas.secTitle}</h4>)}
                             </div>
                         </Col>
                         <Col md="12">
                             <div className="filter-btns text-center">
                                 <ul className="filter-btn-list list-unstyled list inline">
-                                    <li data-target="*" className="active list-inline-item">All Courses</li>
-                                    <li data-target="desi" className="list-inline-item">Example</li>
-                                    <li data-target="deve" className="list-inline-item">Web Development</li>
-                                    <li data-target="seo" className="list-inline-item">Seo</li>
-                                    <li data-target="prog" className="list-inline-item">Programming</li>
+                                    <li data-target="*" className="active list-inline-item">{lang === "ar" ? (<>جميع الدورات</>) : (<>All Courses</>)}</li>
+                                    <li data-target="desi" className="list-inline-item">{lang === "ar" ? (<>أمثلة</>) : (<>Example</>)}</li>
+                                    <li data-target="deve" className="list-inline-item">{lang === "ar" ? (<>تطوير الويب</>) : (<>Web Development</>)}</li>
+                                    <li data-target="seo" className="list-inline-item">{lang === "ar" ? (<>تحسين محرك البحث</>) : (<>Seo</>)}</li>
+                                    <li data-target="prog" className="list-inline-item">{lang === "ar" ? (<>البرمجة</>) : (<>Programming</>)}</li>
                                 </ul>
                             </div>
                             <Row className="filter-items">
@@ -69,16 +69,22 @@ function CourseFilter() {
                                                                 <img src={process.env.PUBLIC_URL + `/assets/images/${data.authorImg}`} alt="" />
                                                             </div>
                                                             <div className="title">
-                                                                <p>{data.authorName}</p>
-                                                                <span>{data.authorCourses}</span>
+                                                                {lang === "ar" ? (<><p>{data.authorNameArabic}</p>
+                                                                <span>{data.authorCoursesArabic}</span></>) : (<><p>{data.authorName}</p>
+                                                                <span>{data.authorCourses}</span></>)}
+                                                                
                                                             </div>
                                                         </div>
                                                        
                                                     </div>
                                                 </Link>
                                                 <div className="course-content">
-                                                    <h6 className="heading"><Link to={process.env.PUBLIC_URL + data.courseLink}>{data.courseTitle}</Link></h6>
-                                                    <p className="desc">{data.courseDesc}</p>
+                                                    <h6 className="heading">
+                                                        {lang === "ar" ? (<Link to={process.env.PUBLIC_URL + data.courseLink}>{data.courseTitleArabic}</Link>) : (<Link to={process.env.PUBLIC_URL + data.courseLink}>{data.courseTitle}</Link>)}
+                                                        
+                                                        </h6>
+                                                    {lang === "ar" ? (<p className="desc">{data.courseDescArabic}</p>) : (<p className="desc">{data.courseDesc}</p>)}
+                                                    
                                                     <div className="course-face d-flex justify-content-between">
                                                         <div className="duration">
                                                             <p><i className="las la-clock"></i>120</p>
