@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Datas from '../data/course/filter.json';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Styles } from "./styles/courseFilter.js";
 
+
 function CourseFilter() {
+    
     useEffect(() => {
         const buttons = document.querySelector(".filter-btn-list").children;
         const items = document.querySelector(".filter-items").children;
@@ -33,7 +35,6 @@ function CourseFilter() {
             })
         }
     });
-
     return (
         <Styles>
             {/* Course Area */}
@@ -49,7 +50,7 @@ function CourseFilter() {
                             <div className="filter-btns text-center">
                                 <ul className="filter-btn-list list-unstyled list inline">
                                     <li data-target="*" className="active list-inline-item">All Courses</li>
-                                    <li data-target="desi" className="list-inline-item">Web Design</li>
+                                    <li data-target="desi" className="list-inline-item">Example</li>
                                     <li data-target="deve" className="list-inline-item">Web Development</li>
                                     <li data-target="seo" className="list-inline-item">Seo</li>
                                     <li data-target="prog" className="list-inline-item">Programming</li>
