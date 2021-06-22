@@ -48,7 +48,8 @@ class TestimonialSlider extends Component {
                         <Row>
                             <Col md="12">
                                 <div className="sec-title text-center">
-                                    <h4>{Datas.secTitle}</h4>
+                                  {lang === "ar" ? (<h4>{Datas.secTitleArabic}</h4>):(<h4>{Datas.secTitle}</h4>)}  
+                                    
                                 </div>
                             </Col>
                             <Col md="12" className="testimonial-slider">
