@@ -3,9 +3,13 @@ import Datas from '../data/testimonial/testimonial-slider.json';
 import { Container, Row, Col } from 'react-bootstrap';
 import Swiper from 'react-id-swiper';
 import { Styles } from "./styles/testimonialSlider.js";
+import { LangContext } from "./common/contexts/LangContext";
 
 class TestimonialSlider extends Component {
+    static contextType = LangContext;
     render() {
+        const lang = this.context.lang;
+        
         const settings = {
             slidesPerView: 2,
             loop: true,

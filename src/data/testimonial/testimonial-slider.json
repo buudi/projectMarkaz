@@ -1,22 +1,31 @@
 {
     "secTitle": "Lets See What Our Valuable Students Think About Us. Their Testimonials.",
+    "secTitleArabic": "كلمات شرافيه",
     "backgroundImage": "vd-bg.jpg",
     "dataList": [
         {
             "id": "1",
             "testimonialTitle": "It is great to be a part of this community.",
+            "testimonialTitleArabic": "كييييييييكيكيككيكيكيكيكيكي",
             "testimonialDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitation maior. Placeat repellat, et totam optio. Sequi qui laborum ratione cumque tempo totam voluptatum.",
+            "testimonialDescArabic": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitation maior. Placeat repellat, et totam optio. Sequi qui laborum ratione cumque tempo totam voluptatum.",
             "authorImg": "testimonial-1.jpg",
             "authorName": "David Show",
-            "authorTitle": "Developer"
+            "authorNameArabic": "David Show",
+            "authorTitle": "Developer",
+            "authorTitleArabic": "اايايايايااي"
         },
         {
             "id": "2",
             "testimonialTitle": "It is great to be a part of this community.",
+            "testimonialTitleArabic": "It is great to be a part of this community.",
             "testimonialDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitation maior. Placeat repellat, et totam optio. Sequi qui laborum ratione cumque tempo totam voluptatum.",
+            "testimonialDescArabic": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitation maior. Placeat repellat, et totam optio. Sequi qui laborum ratione cumque tempo totam voluptatum.",
             "authorImg": "testimonial-2.jpg",
             "authorName": "Tom Parker",
-            "authorTitle": "Programmer"
+            "authorNameArabic": "Tom Parker",
+            "authorTitle": "Programmer",
+            "authorTitleArabic": "Programmer"
         }
     ]
 }
