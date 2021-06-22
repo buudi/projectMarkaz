@@ -4,7 +4,9 @@
         "backgroundImage": "slider-1.jpeg",
         "uniqClass": "slider-box slider-box1",
         "title": "Welcome To Edulyn.",
+        "titleArabic": "أهلا بكم في مركز الهدى",
         "desc": "Best University In This Region Join With Us Today",
+        "descArabic": "أهلا بكم في مركز الهدى",
         "btnOneLink": "course-grid",
         "btnTwoLink": "contact"
     },
@@ -13,7 +15,9 @@
         "backgroundImage": "slider-2.jpeg",
         "uniqClass": "slider-box slider-box2 text-right",
         "title": "Welcome To Edulyn.",
+        "titleArabic": "أهلا بكم في مركز الهدى",
         "desc": "Best University In This Region Join With Us Today",
+        "descArabic": "أهلا بكم في مركز الهدى",
         "btnOneLink": "course-grid",
         "btnTwoLink": "contact"
     }

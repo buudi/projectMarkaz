@@ -51,10 +51,12 @@ class HeroSlider extends Component {
                                                     <Col md="12">
                                                         <div className={data.uniqClass}>
                                                             <div className="slider-title">
-                                                                <p>{data.title}</p>
+                                                                {lang === "ar" ? (<p>{data.titleArabic}</p>) : (<p>{data.title}</p>)}
+                                                                
                                                             </div>
                                                             <div className="slider-desc">
-                                                                <h1>{data.desc}</h1>
+                                                            {lang === "ar" ? (<h1>{data.descArabic}</h1>) : (<h1>{data.desc}</h1>)}
+                                                                
                                                             </div>
                                                             <div className="slider-btn">
                                                                 <Link className="slider-btn1" to={process.env.PUBLIC_URL + `/${data.btnOneLink}`}>{lang === "ar" ? (<> دوراتنا</>):(<>Our Courses</>)}</Link>
