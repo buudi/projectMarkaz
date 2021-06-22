@@ -3,9 +3,10 @@ import Datas from '../data/course/filter.json';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Styles } from "./styles/courseFilter.js";
-
+import {LangContext} from "./common/contexts/LangContext";
 
 function CourseFilter() {
+    const {lang} = useContext(LangContext);
     
     useEffect(() => {
         const buttons = document.querySelector(".filter-btn-list").children;
@@ -106,7 +107,7 @@ function CourseFilter() {
                         </Col>
                         <Col md="12" className="text-center">
                             <div className="viewall-btn">
-                                <Link to={process.env.PUBLIC_URL + "/course-grid"}>View All Courses</Link>
+                                <Link to={process.env.PUBLIC_URL + "/course-grid"}>{lang === "ar" ? (<>عرض جميع الدورات</>):(<>View All Courses</>)}</Link>
                             </div>
                         </Col>
                     </Row>

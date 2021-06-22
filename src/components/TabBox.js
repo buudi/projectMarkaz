@@ -23,13 +23,13 @@ class TabBox extends Component {
                                             <Nav.Link eventKey="mission"><i className="las la-arrow-right"></i>{lang === "ar" ? (<> البرامج التعليميه </>  ):(<>  Educational programs </> )}</Nav.Link>
                                         </Nav.Item>
                                         <Nav.Item>
-                                            <Nav.Link eventKey="vision"><i className="las la-arrow-right"></i>{lang === "ar" ? ( <> البرامج الدراسيه</>  ):(  <> Study Programs </>  )}</Nav.Link>
+                                            <Nav.Link eventKey="vision"><i className="las la-arrow-right"></i>{lang === "ar" ? ( <> البرامج التدريبيه</>  ):(  <> Study Programs </>  )}</Nav.Link>
                                         </Nav.Item>
                                         <Nav.Item>
                                             <Nav.Link eventKey="ranking"><i className="las la-arrow-right"></i>{lang === "ar" ? (<>  استراجيات التعلم </>):(<> Learning Strategies</>)}</Nav.Link>
                                         </Nav.Item>
                                         <Nav.Item>
-                                            <Nav.Link eventKey="research"><i className="las la-arrow-right"></i> {lang === "ar" ? (<> خطط المركز   </>):(<> Center plans  </>)}</Nav.Link>
+                                            <Nav.Link eventKey="research"><i className="las la-arrow-right"></i> {lang === "ar" ? (<> خطط الحفظ   </>):(<> Center plans  </>)}</Nav.Link>
                                         </Nav.Item>
                                     </Nav>
                                 </Col>
@@ -54,7 +54,7 @@ class TabBox extends Component {
                                             </ul>
                                         </Tab.Pane>
                                         <Tab.Pane eventKey="vision">
-                                            <h4 className="tab-title">{lang === "ar" ? ( <> البرامج الدراسيه</>  ):(  <> Study Programs </>  )}</h4>
+                                            <h4 className="tab-title">{lang === "ar" ? ( <> البرامج التدريبيه</>  ):(  <> Study Programs </>  )}</h4>
                                             <p className="tab-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum amet quo eius saepe et quis necessitatibus hic natus facere a nisi fuga rem quas molestias, eveniet minima molestiae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, recusandae? Assumenda, error. Quam dicta iusto saepe. Odit minus voluptas, fuga ipsum quia debitis totam, tempore laudantium quasi dicta dolorem deleniti.</p>
                                             <ul className="list-unstyled check-list">
                                                 <li><i className="fa fa-check"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum amet quo eius saepe et quis necessitatibus hic natus facere.</li>
@@ -72,7 +72,7 @@ class TabBox extends Component {
                                             </ul>
                                         </Tab.Pane>
                                         <Tab.Pane eventKey="research">
-                                            <h4 className="tab-title">{lang === "ar" ? (<> خطط المركز   </>):(<> Center plans  </>)}</h4>
+                                            <h4 className="tab-title">{lang === "ar" ? (<>خطط الحفظ   </>):(<> Center plans  </>)}</h4>
                                             <p className="tab-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum amet quo eius saepe et quis necessitatibus hic natus facere a nisi fuga rem quas molestias, eveniet minima molestiae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, recusandae? Assumenda, error. Quam dicta iusto saepe. Odit minus voluptas, fuga ipsum quia debitis totam, tempore laudantium quasi dicta dolorem deleniti.</p>
                                             <ul className="list-unstyled check-list">
                                                 <li><i className="fa fa-check"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum amet quo eius saepe et quis necessitatibus hic natus facere.</li>
