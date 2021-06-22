@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import Datas from '../data/faq-event/faq-event.json';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Styles } from "./styles/faqEvent.js";
+import { LangContext } from "../components/common/contexts/LangContext"; 
 
 function FaqEvent() {
+    const {lang} = useContext(LangContext);
     useEffect(() => {
         const accordionButton = document.querySelectorAll(".accordion-button");
         accordionButton.forEach(button => {
@@ -34,7 +36,8 @@ function FaqEvent() {
                                 <Row>
                                     <Col md="12">
                                         <div className="sec-title">
-                                            <h4>Upcoming <span>Events</span></h4>
+                                            {lang === "ar" ? (<h4><span>الأحداث</span> القادمة </h4>) : (<h4>Upcoming <span>Events</span></h4>)}
+                                            
                                         </div>
                                     </Col>
                                     <Col md="12">
@@ -62,7 +65,8 @@ function FaqEvent() {
                         <Col md="6">
                             <div className="faq-area">
                                 <div className="sec-title">
-                                    <h4>Frequently Ask <span>Question</span></h4>
+                                    {lang === "ar" ? (<h4>أسئلة <span> شائعة</span></h4>) : (<h4>Frequently Ask <span>Question</span></h4>)}
+                                    
                                 </div>
                                 <div className="faq-box">
                                     {
