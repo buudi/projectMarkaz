@@ -1,12 +1,12 @@
 {
     "secTitle": "Lets See What Our Valuable Students Think About Us. Their Testimonials.",
-    "secTitleArabic": "كلمات شرافيه",
+    "secTitleArabic": "كلمات شرفيه",
     "backgroundImage": "vd-bg.jpg",
     "dataList": [
         {
             "id": "1",
-            "testimonialTitle": "It is great to be a part of this community.",
-            "testimonialTitleArabic": "كييييييييكيكيككيكيكيكيكيكي",
+            "testimonialTitle": "It is great to be a part of this community 1.",
+            "testimonialTitleArabic": "1كييييييييكيكيككيكيكيكيكيكي",
             "testimonialDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitation maior. Placeat repellat, et totam optio. Sequi qui laborum ratione cumque tempo totam voluptatum.",
             "testimonialDescArabic": "سسسسسسسسسسييييي",
             "authorImg": "testimonial-1.jpg",
@@ -17,8 +17,32 @@
         },
         {
             "id": "2",
-            "testimonialTitle": "It is great to be a part of this community.",
-            "testimonialTitleArabic": "سسسسيييي",
+            "testimonialTitle": "It is great to be a part of this community 2.",
+            "testimonialTitleArabic": "2سسسسيييي",
+            "testimonialDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitation maior. Placeat repellat, et totam optio. Sequi qui laborum ratione cumque tempo totam voluptatum.",
+            "testimonialDescArabic": "ييييييي",
+            "authorImg": "testimonial-2.jpg",
+            "authorName": "Tom Parker",
+            "authorNameArabic": "يييييييي",
+            "authorTitle": "Programmer",
+            "authorTitleArabic": "ييييييي"
+        },
+        {
+            "id": "3",
+            "testimonialTitle": "It is great to be a part of this community 3.",
+            "testimonialTitleArabic": "3سسسسيييي",
+            "testimonialDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitation maior. Placeat repellat, et totam optio. Sequi qui laborum ratione cumque tempo totam voluptatum.",
+            "testimonialDescArabic": "ييييييي",
+            "authorImg": "testimonial-2.jpg",
+            "authorName": "Tom Parker",
+            "authorNameArabic": "يييييييي",
+            "authorTitle": "Programmer",
+            "authorTitleArabic": "ييييييي"
+        },
+        {
+            "id": "4",
+            "testimonialTitle": "It is great to be a part of this community 4.",
+            "testimonialTitleArabic": "سسسسيييي 4",
             "testimonialDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitation maior. Placeat repellat, et totam optio. Sequi qui laborum ratione cumque tempo totam voluptatum.",
             "testimonialDescArabic": "ييييييي",
             "authorImg": "testimonial-2.jpg",
