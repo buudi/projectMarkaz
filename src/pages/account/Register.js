@@ -1,12 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import HeaderTwo from '../../components/HeaderTwo';
 import { BreadcrumbBox } from '../../components/common/Breadcrumb';
 import FooterTwo from '../../components/FooterTwo';
 import { Styles } from './styles/account.js';
-
+import {LangContext} from "../../components/common/contexts/LangContext";
 function Register() {
+    const {lang} = useContext(LangContext);
     useEffect(() => {
         const form = document.getElementById("form_registration");
         const fname = document.getElementById("registration_fname");
@@ -93,7 +94,8 @@ function Register() {
                 <HeaderTwo />
 
                 {/* Breadcroumb */}
-                <BreadcrumbBox title="Registration" />
+                {lang === "ar" ? (<BreadcrumbBox title="التسجيل" />) : (<BreadcrumbBox title="Registration" />)}
+                
 
                 {/* Registration Area */}
                 <section className="registration-area">
@@ -102,43 +104,49 @@ function Register() {
                             <Col md="12">
                                 <div className="registration-box">
                                     <div className="registration-title text-center">
-                                        <h3>Registration</h3>
+                                        <h3>{lang === "ar" ? (<>التسجيل</>) : (<>Registeration</>)}</h3>
                                     </div>
                                     <form id="form_registration" className="form">
                                         <p className="form-control">
-                                            <label htmlFor="registration_fname">First Name</label>
-                                            <input type="text" placeholder="First name" id="registration_fname" />
+                                            <label htmlFor="registration_fname">{lang === "ar" ? (<>الاسم الأول</>) : (<>First Name</>)}</label>
+                                            {lang === "ar" ? (<input type="text" placeholder="الاسم الاول" id="registration_fname" />) : (<input type="text" placeholder="First name" id="registration_fname" />)}
                                             <span className="registration_input-msg"></span>
                                         </p>
                                         <p className="form-control">
-                                            <label htmlFor="registration_lname">Last Name</label>
-                                            <input type="text" placeholder="Last name" id="registration_lname" />
+                                            <label htmlFor="registration_lname">{lang === "ar" ? (<>الاسم الاخير</>) : (<>Last Name</>)}</label>
+                                            {lang === "ar" ? ( <input type="text" placeholder="الاسم الاخير" id="registration_lname" />) : ( <input type="text" placeholder="Last name" id="registration_lname" />)}
+                                           
                                             <span className="registration_input-msg"></span>
                                         </p>
                                         <p className="form-control">
-                                            <label htmlFor="registration_email">Email Address</label>
-                                            <input type="email" placeholder="Email address" id="registration_email" />
+                                            <label htmlFor="registration_email">{lang === "ar" ? (<>عنوان البريد الإلكتروني</>) : (<>Email Address</>)}</label>
+                                            {lang === "ar" ? ( <input type="email" placeholder="عنوان البريد الإلكتروني" id="registration_email" />) : ( <input type="email" placeholder="Email address" id="registration_email" />)}
+                                           
                                             <span className="registration_input-msg"></span>
                                         </p>
                                         <p className="form-control">
-                                            <label htmlFor="registration_user">User Name</label>
-                                            <input type="text" placeholder="Username" id="registration_user" />
+                                            <label htmlFor="registration_user">{lang === "ar" ? (<>اسم االمستخدم</>) : (<>User Name</>)}</label>
+                                            {lang === "ar" ? (  <input type="text" placeholder="اسم المستخدم" id="registration_user" />) : (  <input type="text" placeholder="Username" id="registration_user" />)}
+                                          
                                             <span className="registration_input-msg"></span>
                                         </p>
                                         <p className="form-control">
-                                            <label htmlFor="registration_password">Password</label>
-                                            <input type="password" placeholder="*******" id="registration_password" />
+                                            <label htmlFor="registration_password">{lang === "ar" ? (<>كلمه السر</>) : (<>Password</>)}</label>
+                                            {lang === "ar" ? ( <input type="كلمه السر" placeholder="*******" id="registration_password" />) : ( <input type="password" placeholder="*******" id="registration_password" />)}
+                                           
                                             <span className="registration_input-msg"></span>
                                         </p>
                                         <p className="form-control">
-                                            <label htmlFor="registration_cpassword">Confirm Password</label>
-                                            <input type="password" placeholder="Confirm password" id="registration_cpassword" />
+                                            <label htmlFor="registration_cpassword">{lang === "ar" ? (<>تأكيد كلمة المرور</>) : (<>Confirm Password</>)}</label>
+                                            {lang === "ar" ? (<input type="password" placeholder="تأكيد كلمة المرور" id="registration_cpassword" />) : (<input type="password" placeholder="Confirm password" id="registration_cpassword" />)}
+                                            
                                             <span className="registration_input-msg"></span>
                                         </p>
-                                        <button>Register Now</button>
+                                        <button>{lang === "ar" ? (<>سجل الان</>) : (<>Register Now</>)}</button>
                                     </form>
                                     <div className="have_account-btn text-center">
-                                        <p>Already have an account? <Link to="/login">Login Here</Link></p>
+                                    {lang === "ar" ? (<> <p>هل لديك حساب؟ <Link to="/login">تسجيل الدخول هنا</Link></p></>) : (<> <p>Already have an account? <Link to="/login">Login Here</Link></p></>)}
+                                       
                                     </div>
                                 </div>
                             </Col>

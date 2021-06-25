@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Styles } from "./styles/sidebar.js";
+import {LangContext} from "./contexts/LangContext";
 
 function Sidebar() {
+    const {lang} = useContext(LangContext);
     useEffect(() => {
         const sidebarBtn = document.getElementById("sidebar-btn");
 
@@ -44,12 +46,12 @@ function Sidebar() {
                     <div><a href={process.env.PUBLIC_URL + "/"} id="close-sidebar"><i className="las la-times"></i></a></div>
                 </div>
                 <div className="side-content">
-                    <h5>About Us</h5>
+                    <h5>{lang === "ar" ? (<>معلومات عنا</>) : (<>About Us</>)}</h5>
                     <p>Lorem ipsum dolor sit amet, consecte adipisicing elit. Mollitia modi, nostru rem sapiente. Excepturi
                         molestiae soluta quisquam officiis iure sunt.</p>
                 </div>
                 <div className="side-post">
-                    <h5>Recent Post</h5>
+                    <h5>{lang === "ar" ? (<>المنشور الاخير</>) : (<>Recent Post</>)}</h5>
                     <div className="post-box d-flex">
                         <div className="post-img">
                             <img src={process.env.PUBLIC_URL + "/assets/images/post-01.jpg"} alt="" />
@@ -79,7 +81,7 @@ function Sidebar() {
                     </div>
                 </div>
                 <div className="side-gallery">
-                    <h5>Gallery</h5>
+                    <h5>{lang === "ar" ? (<>صالة عرض</>) : (<>Gallery</>)}</h5>
                     <img src={process.env.PUBLIC_URL + "/assets/images/gallery-01.jpg"} alt="" />
                     <img src={process.env.PUBLIC_URL + "/assets/images/gallery-02.jpg"} alt="" />
                     <img src={process.env.PUBLIC_URL + "/assets/images/gallery-03.jpg"} alt="" />
@@ -88,7 +90,7 @@ function Sidebar() {
                     <img src={process.env.PUBLIC_URL + "/assets/images/gallery-06.jpg"} alt="" />
                 </div>
                 <div className="side-contact">
-                    <h5>Contact Us</h5>
+                    <h5>{lang === "ar" ? (<>اتصل بنا</>) : (<>Contact Us</>)}</h5>
                     <ul className="list-unstyled">
                         <li><i className="las la-map-marker"></i>Al MizharAl Mizhar 1 - Dubai.</li>
                         <li><i className="las la-phone"></i>+971 (04) 263 3338</li>
