@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Styles } from "./styles/mobileMenu.js";
+import {LangContext} from "./contexts/LangContext";
 
 function MobileMenu() {
+    const {lang} = useContext(LangContext);
     useEffect(() => {
         // Mobile Menu
         const hmBtn = document.getElementById("mb-sidebar-btn");
@@ -63,9 +65,9 @@ function MobileMenu() {
                                 </div>
                                 <div className="topbar-item">
                                     <ul className="list-unstyled list-inline">
-                                        <li className="list-inline-item"><Link to={process.env.PUBLIC_URL + "/login"}>Log In</Link></li>
+                                        <li className="list-inline-item"><Link to={process.env.PUBLIC_URL + "/login"}>{lang === "ar" ? (<>تسجيل الدخول</>):(<>Login</>)}</Link></li>
                                         <li className="list-inline-item">/</li>
-                                        <li className="list-inline-item"><Link to={process.env.PUBLIC_URL + "/registration"}>Register</Link></li>
+                                        <li className="list-inline-item"><Link to={process.env.PUBLIC_URL + "/registration"}>{lang === "ar" ? (<>تسجيل</>):(<>Register</>)}</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -105,8 +107,8 @@ function MobileMenu() {
                         </button>
                         <div className="mb-menu-content show">
                             <ul className="list-unstyled">
-                                <li><Link to={process.env.PUBLIC_URL + "/"}>Home Style 1</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/home-two"}>Home Style 2</Link></li>
+                                <li><Link to={process.env.PUBLIC_URL + "/"}>{lang === "ar" ? (<>الصفحة الرئيسية</>):(<>Home 1</>)}</Link></li>
+                                <li><Link to={process.env.PUBLIC_URL + "/home-two"}>{lang === "ar" ? (<>الصفحة الرئيسية2</>):(<>Home 2</>)}</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -116,15 +118,15 @@ function MobileMenu() {
                         </button>
                         <div className="mb-menu-content show">
                             <ul className="list-unstyled">
-                                <li><Link to={process.env.PUBLIC_URL + "/about"}>About Us</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/gallery"}>Gallery</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/login"}>Log In</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/registration"}>Registration</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/contact"}>Contact</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/faq"}>Faq</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/404"}>404</Link></li>
-                                
-                            </ul>
+                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/about"}>{lang === "ar"?(<> معلومات عنا </>):(<>About Us</>)}</Link></li>
+                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/gallery"}>{lang === "ar"?(<> الصور </>):(<>Gallery</>)}</Link></li>
+                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/login"}>{lang === "ar"? (<>تسجيل الدخول</>):(<>Log in</>)}</Link></li>
+                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/registration"}>{lang === "ar" ? (<>التسجيل</>) : (<>Registration</>)}</Link></li>
+                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/contact"}>{lang === "ar" ? (<>تواصل معنا</>):(<>Contact</>)}</Link></li>
+                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/faq"}>{lang==="ar" ? (<>أسئلة شائعة</>):(<>Faq</>)}</Link></li>
+                                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/404"}>404</Link></li>
+                                            
+                                        </ul>
                         </div>
                     </div>
                     <div className="mb-menu-item">
@@ -133,10 +135,10 @@ function MobileMenu() {
                         </button>
                         <div className="mb-menu-content show">
                             <ul className="list-unstyled">
-                                <li><Link to={process.env.PUBLIC_URL + "/course-grid"}>Course Grid</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/course-list"}>Course List</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/course-details"}>Course Details</Link></li>
-                            </ul>
+                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/course-grid"}>{lang === "ar" ? (<> قائمه الدورات</>) : (<>Course Grid</>)}</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/course-list"}>{lang === "ar" ? (<> تفاصيل الدورات</>) : (<>Course List</>)}</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/course-details"}>{lang === "ar" ? (<>الدورات</>) : (<>Course Details</>)}</Link></li>
+                                </ul>
                         </div>
                     </div>
                     <div className="mb-menu-item">
@@ -145,9 +147,9 @@ function MobileMenu() {
                         </button>
                         <div className="mb-menu-content">
                             <ul className="list-unstyled">
-                                <li><Link to={process.env.PUBLIC_URL + "/instructor"}>Instructors</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/instructor-details"}>Instructor Details</Link></li>
-                            </ul>
+                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/instructor"}>{lang === "ar" ? (<>المعلمات</>) : (<>Instructors</>)}</Link></li>
+                                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/instructor-details"}>{lang === "ar" ? (<> تفاصيل المعلمات </>) : (<>Instructors Details</>)}</Link></li>
+                                            </ul>
                         </div>
                     </div>
                     <div className="mb-menu-item">
@@ -156,9 +158,9 @@ function MobileMenu() {
                         </button>
                         <div className="mb-menu-content">
                             <ul className="list-unstyled">
-                                <li><Link to={process.env.PUBLIC_URL + "/events"}>Events</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/event-details"}>Event Details</Link></li>
-                            </ul>
+                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/events"}>{lang === "ar" ? (<>الأحداث</>) : (<>Events</>)}</Link></li>
+                                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/event-details"}>{lang === "ar" ? (<>تفاصيل الحدث</>) : (<>Event Details</>)}</Link></li>
+                                            </ul>
                         </div>
                     </div>
                     <div className="mb-menu-item">
@@ -167,23 +169,17 @@ function MobileMenu() {
                         </button>
                         <div className="mb-menu-content">
                             <ul className="list-unstyled">
-                                <li><Link to={process.env.PUBLIC_URL + "/blog-classic"}>Blog Classic</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/blog-grid"}>Blog Grid</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/blog-details"}>Blog Details</Link></li>
-                            </ul>
+                            <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/blog-classic"}>{lang === "ar" ? (<>مقالات</>) : (<>Blog Classic</>)}</Link></li>
+                                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/blog-grid"}>{lang === "ar" ? (<>شبكة بلوق</>) : (<>Blog Grid</>)}</Link></li>
+                                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/blog-details"}>{lang === "ar" ? (<>تفاصيل المدونة</>) : (<>Blog Details</>)}</Link></li>
+                                            </ul>
                         </div>
                     </div>
                     <div className="mb-menu-item">
                         <button className="mb-menu-button">
                             <p>Shop <i className="las la-plus"></i></p>
                         </button>
-                        <div className="mb-menu-content">
-                            <ul className="list-unstyled">
-                                <li><Link to={process.env.PUBLIC_URL + "/products"}>Products</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/product-details"}>Product Details</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/cart"}>Cart</Link></li>
-                            </ul>
-                        </div>
+                       
                     </div>
                 </div>
             </section>

@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Styles } from "./styles/newsletterForm.js";
+import {LangContext} from "./common/contexts/LangContext";
 
 function NewsletterForm() {
+    const {lang} = useContext(LangContext);
     let data = {
         secTitle: 'Get The Latest News & Updates On Your Box',
     }
