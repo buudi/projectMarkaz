@@ -94,15 +94,8 @@ function Login() {
                                         {lang === "ar" ? ( <p>ليس لديك حساب بعد؟ <Link to={process.env.PUBLIC_URL + "/registration"}>انقر هنا</Link></p>) : ( <p>Haven't Any Account Yet? <Link to={process.env.PUBLIC_URL + "/registration"}>Click Here</Link></p>)}
                                            
                                         </div>
-                                        <div className="social-login text-center">
-                                            <p>{lang === "ar" ? (<>تسجيل الدخول مع وسائل التواصل الاجتماعي
-</>) : (<>Login With Social</>)}</p>
-                                            <ul className="list-unstyled list-inline">
-                                                <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-google"></i> Google</a></li>
-                                                <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-facebook-f"></i> Facebook</a></li>
-                                                <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-twitter"></i> Twitter</a></li>
-                                            </ul>
-                                        </div>
+                                       
+                
                                     </form>
                                 </div>
                             </Col>
