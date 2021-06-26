@@ -16,6 +16,12 @@ function Register() {
         const user = document.getElementById("registration_user");
         const password = document.getElementById("registration_password");
         const cpassword = document.getElementById("registration_cpassword");
+        const dob = document.getElementById("registration_dob");
+        const mobile = document.getElementById("registration_mobile");
+        const idNo = document.getElementById("registration_idNo");
+        const idExpiry = document.getElementById("registration_idExpiry");
+        const passNo = document.getElementById("registration_passNo");
+        const passExpiry = document.getElementById("registration_passExpiry");
 
         form.addEventListener("submit", formSubmit);
 
@@ -28,6 +34,12 @@ function Register() {
             const userValue = user.value.trim();
             const passwordValue = password.value.trim();
             const cpasswordValue = cpassword.value.trim();
+            const DobValue = dob.value.trim();
+            const mobileValue = mobile.value.trim(); 
+            const idNoValue = idNo.value.trim();
+            const idExpiryValue = idExpiry.value.trim();
+            const passNoValue = passNo.value.trim();
+            const passExpiryValue = passExpiry.value.trim();
 
             if (fnameValue === "") {
                 setError(fname, "First name can't be blank");
@@ -65,6 +77,42 @@ function Register() {
                 setError(cpassword, "Password doesn't match");
             } else {
                 setSuccess(cpassword);
+            }
+
+            if (DobValue === "") {
+                setError(dob, "Date Of Birth can't be blank");
+            } else {
+                setSuccess(dob);
+            }
+
+             if (mobileValue === "") {
+                setError(mobile, "Mobile number can't be blank");
+            } else {
+                setSuccess(mobile);
+            }
+
+            if (idNoValue === "") {
+                setError(idNo, "Emirates Id number can't be blank");
+            } else {
+                setSuccess(idNo);
+            }
+
+            if  (idExpiryValue === "") {
+                setError(idExpiry, "Emirates id expiry number can't be blank");
+            } else {
+                setSuccess(idExpiry);
+            }
+
+            if (passNoValue === "") {
+                setError(passNo, "Passport Number can't be blank");
+            } else {
+                setSuccess(passNo);
+            }
+
+            if (passExpiryValue === "") {
+                setError(passExpiry, "Passport expiry date can't be blank");
+            } else {
+                setSuccess(passExpiry);
             }
         }
 
@@ -143,38 +191,38 @@ function Register() {
                                             <span className="registration_input-msg"></span>
                                         </p>
                                         <p className="form-control">
-                                            <label htmlFor="registration_lname">{lang === "ar" ? (<>تاريخ الميلاد</>) : (<>Date of Birth</>)}</label>
-                                            {lang === "ar" ? ( <input type="number" placeholder="05/08/2005" id="registration_lname" />) : ( <input type="number" placeholder="05/08/2005" id="registration_lname" />)}
+                                            <label htmlFor="registration_dob">{lang === "ar" ? (<>تاريخ الميلاد</>) : (<>Date of Birth</>)}</label>
+                                            {lang === "ar" ? ( <input type="date" placeholder="05/08/2005" id="registration_dob" />) : ( <input type="date" placeholder="05/08/2005" id="registration_dob" />)}
                                            
                                             <span className="registration_input-msg"></span>
                                         </p>
                                         <p className="form-control">
-                                            <label htmlFor="registration_lname">{lang === "ar" ? (<>رقم الهاتف</>) : (<>Contact Number</>)}</label>
-                                            {lang === "ar" ? ( <input type="number" placeholder="971589745124" id="registration_lname" />) : ( <input type="number" placeholder="971589745124" id="registration_lname" />)}
+                                            <label htmlFor="registration_mobile">{lang === "ar" ? (<>رقم الهاتف</>) : (<>Contact Number</>)}</label>
+                                            {lang === "ar" ? ( <input type="number" placeholder="971501234567" id="registration_mobile" />) : ( <input type="number" placeholder="971589745124" id="registration_mobile" />)}
                                            
                                             <span className="registration_input-msg"></span>
                                         </p>
                                         <p className="form-control">
-                                            <label htmlFor="registration_lname">{lang === "ar" ? (<>رقم الهويه</>) : (<>Emirates ID No</>)}</label>
-                                            {lang === "ar" ? ( <input type="number" placeholder="784-2009-9452158-7" id="registration_lname" />) : ( <input type="number" placeholder="784-2009-9452158-7" id="registration_lname" />)}
+                                            <label htmlFor="registration_idNo">{lang === "ar" ? (<>رقم الهوية</>) : (<>Emirates ID No</>)}</label>
+                                            {lang === "ar" ? ( <input type="number" placeholder="784-2009-9452158-7" id="registration_idNo" />) : ( <input type="number" placeholder="784-2009-9452158-7" id="registration_idNo" />)}
                                            
                                             <span className="registration_input-msg"></span>
                                         </p>
                                         <p className="form-control">
-                                            <label htmlFor="registration_lname">{lang === "ar" ? (<>تاريخ انتهاء الهويه</>) : (<>Emirates ID Expiry Date</>)}</label>
-                                            {lang === "ar" ? ( <input type="number" placeholder="28-05-2022" id="registration_lname" />) : ( <input type="number" placeholder="28-05-2022" id="registration_lname" />)}
+                                            <label htmlFor="registration_idExpiry">{lang === "ar" ? (<>تاريخ انتهاء الهوية</>) : (<>Emirates ID Expiry Date</>)}</label>
+                                            {lang === "ar" ? ( <input type="date" placeholder="28-05-2022" id="registration_idExpiry" />) : ( <input type="date" placeholder="28-05-2022" id="registration_idExpiry" />)}
                                            
                                             <span className="registration_input-msg"></span>
                                         </p>
                                         <p className="form-control">
-                                            <label htmlFor="registration_lname">{lang === "ar" ? (<>رقم جواز السفر</>) : (<>Passport Number</>)}</label>
-                                            {lang === "ar" ? ( <input type="number" placeholder="ادخل رقم جواز السفر " id="registration_lname" />) : ( <input type="number" placeholder="Enter Passport Number" id="registration_lname" />)}
+                                            <label htmlFor="registration_passNo">{lang === "ar" ? (<>رقم جواز السفر</>) : (<>Passport Number</>)}</label>
+                                            {lang === "ar" ? ( <input type="number" placeholder="ادخل رقم جواز السفر " id="registration_passNo" />) : ( <input type="number" placeholder="Enter Passport Number" id="registration_passNo" />)}
                                            
                                             <span className="registration_input-msg"></span>
                                         </p>
                                         <p className="form-control">
-                                            <label htmlFor="registration_lname">{lang === "ar" ? (<>تاريخ انتها جواز السفر</>) : (<>Passport Expiry Date</>)}</label>
-                                            {lang === "ar" ? ( <input type="number" placeholder="ادخل تاريخ انتهاء جواز" id="registration_lname" />) : ( <input type="number" placeholder=" Enter Passport Expiry Date" id="registration_lname" />)}
+                                            <label htmlFor="registration_passExpiry">{lang === "ar" ? (<>تاريخ انتهاء جواز السفر</>) : (<>Passport Expiry Date</>)}</label>
+                                            {lang === "ar" ? ( <input type="date" placeholder="ادخل تاريخ انتهاء جواز" id="registration_passExpiry" />) : ( <input type="date" placeholder=" Enter Passport Expiry Date" id="registration_passExpiry" />)}
                                            
                                             <span className="registration_input-msg"></span>
                                         </p>
