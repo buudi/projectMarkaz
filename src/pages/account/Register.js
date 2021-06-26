@@ -142,6 +142,43 @@ function Register() {
                                             
                                             <span className="registration_input-msg"></span>
                                         </p>
+                                        <p className="form-control">
+                                            <label htmlFor="registration_lname">{lang === "ar" ? (<>تاريخ الميلاد</>) : (<>Date of Birth</>)}</label>
+                                            {lang === "ar" ? ( <input type="number" placeholder="05/08/2005" id="registration_lname" />) : ( <input type="number" placeholder="05/08/2005" id="registration_lname" />)}
+                                           
+                                            <span className="registration_input-msg"></span>
+                                        </p>
+                                        <p className="form-control">
+                                            <label htmlFor="registration_lname">{lang === "ar" ? (<>رقم الهاتف</>) : (<>Contact Number</>)}</label>
+                                            {lang === "ar" ? ( <input type="number" placeholder="971589745124" id="registration_lname" />) : ( <input type="number" placeholder="971589745124" id="registration_lname" />)}
+                                           
+                                            <span className="registration_input-msg"></span>
+                                        </p>
+                                        <p className="form-control">
+                                            <label htmlFor="registration_lname">{lang === "ar" ? (<>رقم الهويه</>) : (<>Emirates ID No</>)}</label>
+                                            {lang === "ar" ? ( <input type="number" placeholder="784-2009-9452158-7" id="registration_lname" />) : ( <input type="number" placeholder="784-2009-9452158-7" id="registration_lname" />)}
+                                           
+                                            <span className="registration_input-msg"></span>
+                                        </p>
+                                        <p className="form-control">
+                                            <label htmlFor="registration_lname">{lang === "ar" ? (<>تاريخ انتهاء الهويه</>) : (<>Emirates ID Expiry Date</>)}</label>
+                                            {lang === "ar" ? ( <input type="number" placeholder="28-05-2022" id="registration_lname" />) : ( <input type="number" placeholder="28-05-2022" id="registration_lname" />)}
+                                           
+                                            <span className="registration_input-msg"></span>
+                                        </p>
+                                        <p className="form-control">
+                                            <label htmlFor="registration_lname">{lang === "ar" ? (<>رقم جواز السفر</>) : (<>Passport Number</>)}</label>
+                                            {lang === "ar" ? ( <input type="number" placeholder="ادخل رقم جواز السفر " id="registration_lname" />) : ( <input type="number" placeholder="Enter Passport Number" id="registration_lname" />)}
+                                           
+                                            <span className="registration_input-msg"></span>
+                                        </p>
+                                        <p className="form-control">
+                                            <label htmlFor="registration_lname">{lang === "ar" ? (<>تاريخ انتها جواز السفر</>) : (<>Passport Expiry Date</>)}</label>
+                                            {lang === "ar" ? ( <input type="number" placeholder="ادخل تاريخ انتهاء جواز" id="registration_lname" />) : ( <input type="number" placeholder=" Enter Passport Expiry Date" id="registration_lname" />)}
+                                           
+                                            <span className="registration_input-msg"></span>
+                                        </p>
+
                                         <button>{lang === "ar" ? (<>سجل الان</>) : (<>Register Now</>)}</button>
                                     </form>
                                     <div className="have_account-btn text-center">
