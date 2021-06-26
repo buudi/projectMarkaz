@@ -6,8 +6,10 @@ import { BreadcrumbBox } from '../../components/common/Breadcrumb';
 import FooterTwo from '../../components/FooterTwo';
 import { Styles } from './styles/account.js';
 import {LangContext} from "../../components/common/contexts/LangContext";
+
 function Register() {
     const {lang} = useContext(LangContext);
+
     useEffect(() => {
         const form = document.getElementById("form_registration");
         const fname = document.getElementById("registration_fname");
@@ -42,75 +44,131 @@ function Register() {
             const passExpiryValue = passExpiry.value.trim();
 
             if (fnameValue === "") {
-                setError(fname, "First name can't be blank");
+                if (lang === "ar"){
+                    setError(fname, "لا يمكن أن يكون الاسم الأول فارغًا");
+                } else {
+                    setError(fname, "First name can't be blank");
+                }
+                
             } else {
                 setSuccess(fname);
             }
 
             if (lnameValue === "") {
-                setError(lname, "Last name can't be blank");
+                if (lang === "ar"){
+                    setError(lname, "لا يمكن أن يكون الاسم الأخير فارغًا");
+                } else {
+                    setError(lname, "Last name can't be blank");
+                }
+                
             } else {
                 setSuccess(lname);
             }
 
             if (emailValue === "") {
-                setError(email, "Email can't be blank");
+                if (lang === "ar"){
+                    setError(email, "لا يمكن أن يكون البريد الإلكتروني فارغًا");
+                } else {
+                    setError(email, "Email can't be blank");
+                }
             } else if (!isEmail(emailValue)) {
-                setError(email, "Not a valid email");
+                if (lang === "ar"){
+                    setError(email, "ليس بريدًا إلكترونيًا صالحًا")
+                } else {
+                    setError(email, "Not a valid email");
+                }
             } else {
                 setSuccess(email);
             }
 
             if (userValue === "") {
-                setError(user, "User name can't be blank");
+                if (lang === "ar"){
+                    setError(user, "لا يمكن أن يكون اسم المستخدم فارغًا");
+                } else {
+                    setError(user, "User name can't be blank");
+                }
+                
             } else {
                 setSuccess(user);
             }
 
             if (passwordValue === "") {
-                setError(password, "Password can't be blank");
+                if (lang === "ar"){
+                    setError(password, "لا يمكن أن تكون كلمة المرور فارغة");
+                } else {
+                    setError(password, "Password can't be blank");
+                }
+                
             } else {
                 setSuccess(password);
             }
 
             if (cpasswordValue === "" || passwordValue !== cpasswordValue) {
-                setError(cpassword, "Password doesn't match");
+                if (lang === "ar") {
+                    setError(cpassword, "كلمة المرور غير متطابقة");
+                } else {
+                    setError(cpassword, "Password doesn't match");
+                }
             } else {
                 setSuccess(cpassword);
             }
 
             if (DobValue === "") {
-                setError(dob, "Date Of Birth can't be blank");
+                if (lang === "ar"){
+                    setError(dob, "لا يمكن أن يكون تاريخ الميلاد فارغًا");
+                } else {
+                    setError(dob, "Date Of Birth can't be blank");
+                }
             } else {
                 setSuccess(dob);
             }
 
              if (mobileValue === "") {
-                setError(mobile, "Mobile number can't be blank");
+                 if (lang === "ar"){
+                    setError(mobile, "لا يمكن أن يكون رقم الهاتف المحمول فارغًا");
+                 } else {
+                    setError(mobile, "Mobile number can't be blank");
+                 }
             } else {
                 setSuccess(mobile);
             }
 
             if (idNoValue === "") {
-                setError(idNo, "Emirates Id number can't be blank");
+                if (lang === "ar"){
+                    setError(idNo, "لا يمكن أن يكون رقم هوية الإمارات فارغًا");
+                } else {
+                    setError(idNo, "Emirates Id number can't be blank");
+                }
             } else {
                 setSuccess(idNo);
             }
 
             if  (idExpiryValue === "") {
-                setError(idExpiry, "Emirates id expiry number can't be blank");
+                if (lang === "ar"){
+                    setError(idExpiry, "لا يمكن أن يكون رقم تاريخ إنتهاء هوية الإمارات فارغًا");
+                } else {
+                    setError(idExpiry, "Emirates id expiry date can't be blank");
+                }
             } else {
                 setSuccess(idExpiry);
             }
 
             if (passNoValue === "") {
-                setError(passNo, "Passport Number can't be blank");
+                if (lang === "ar"){
+                    setError(passNo, "لا يمكن أن يكون رقم جواز السفر فارغًا");
+                } else {
+                    setError(passNo, "Passport Number can't be blank");
+                }
             } else {
                 setSuccess(passNo);
             }
 
             if (passExpiryValue === "") {
-                setError(passExpiry, "Passport expiry date can't be blank");
+                if (lang === "ar"){
+                    setError(passExpiry, "لا يمكن ترك تاريخ انتهاء صلاحية جواز السفر فارغًا");
+                } else {
+                    setError(passExpiry, "Passport expiry date can't be blank");
+                }
             } else {
                 setSuccess(passExpiry);
             }
