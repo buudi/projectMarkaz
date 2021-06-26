@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Datas from '../data/help-area/help-area.json';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Styles } from "./styles/homeContact.js";
+import {LangContext} from "./common/contexts/LangContext";
 
 function HelpArea() {
+    const {lang} = useContext(LangContext);
     useEffect(() => {
         const form = document.getElementById("form1");
         const name = document.getElementById("name1");
@@ -65,7 +67,8 @@ function HelpArea() {
                     <Row>
                         <Col md="12">
                             <div className="sec-title text-center">
-                                <h4>{Datas.secTitle}</h4>
+                                {lang === "ar"?(<h4>{Datas.secTitleArabic}</h4>):(<h4>{Datas.secTitle}</h4>)}
+                                
                             </div>
                         </Col>
                         <Col md="12">
@@ -73,24 +76,28 @@ function HelpArea() {
                                 <Row>
                                     <Col md="4">
                                         <p className="form-control">
-                                            <input type="text" placeholder="Enter your Name" id="name1" />
+                                            {lang === "ar"?(<input type="text" placeholder="اكتب اسمك" id="name1" />):( <input type="text" placeholder="Enter your Name" id="name1" />)}
+                                           
                                             <span className="input-msg1"></span>
                                         </p>
                                     </Col>
                                     <Col md="4">
                                         <p className="form-control">
-                                            <input type="email" placeholder="Enter your Email" id="email1" />
+                                        {lang === "ar"?(<input type="email" placeholder="اكتب ايميلك" id="email1" />):(<input type="email" placeholder="Enter your Email" id="email1" />)}
+                                            
                                             <span className="input-msg1"></span>
                                         </p>
                                     </Col>
                                     <Col md="4">
                                         <p className="form-control">
-                                            <input type="text" placeholder="Enter Subject" id="subject1" />
+                                        {lang === "ar"?(  <input type="text" placeholder="اكتب المشكله" id="subject1" />):(  <input type="text" placeholder="Enter Subject" id="subject1" />)}
+                                          
                                             <span className="input-msg1"></span>
                                         </p>
                                     </Col>
                                     <Col md="12" className="text-center">
-                                        <button>Send Request</button>
+                                    {lang === "ar"?(<button>ارسال</button>):(<button>Send Request</button>)}
+                                        
                                     </Col>
                                 </Row>
                             </form>
