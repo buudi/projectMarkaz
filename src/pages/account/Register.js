@@ -11,11 +11,14 @@ import {
     Alert,
     AlertIcon,
 } from "@chakra-ui/react";
-
+import axios from "axios";
 
 function Register() {
     const { lang } = useContext(LangContext);
+
+    const [isError, setIsError] = useState(false);
     const [cardStatus, setCardStatus] = useState("success");
+     // "clean" is for no card and "success" is for success card "network" is for network error 
 
     useEffect(() => {
         const form = document.getElementById("form_registration");
@@ -55,6 +58,7 @@ function Register() {
                 if (lang === "ar") {
                     setError(fname, "لا يمكن أن يكون الاسم الأول فارغًا");
                 } else {
+                    setIsError(true);
                     setError(fname, "First name can't be blank");
                 }
 
@@ -192,6 +196,21 @@ function Register() {
         function setSuccess(input) {
             const formControl = input.parentElement;
             formControl.className = "form-control success";
+            if (isError === true) {
+                console.log("error nigga!");
+                console.log(isError);
+            } else {
+                console.log(isError);
+                axios.post("http://localhost:8080/register", {
+                    [input.name]: input.value.trim()
+                })
+                    .then(res => {
+                        console.log(res);
+                    })
+                    .catch(err => {
+                        console.error(err);
+                    });
+            }
         }
 
         function isEmail(email) {
@@ -227,14 +246,14 @@ function Register() {
                                                     return (<></>);
                                                 } else if (cardStatus === "success") {
                                                     return (
-                                                        <Alert status="success">
+                                                        <Alert borderRadius={12} status="success">
                                                             <AlertIcon />
                                                             Data uploaded to the server. Fire on!
                                                         </Alert>
                                                     );
                                                 } else {
                                                     return (
-                                                        <Alert status="error">
+                                                        <Alert borderRadius={12} status="error">
                                                             <AlertIcon />
                                                             There was an error processing your request
                                                         </Alert>
@@ -247,30 +266,30 @@ function Register() {
                                     <form id="form_registration" className="form">
                                         <p className="form-control">
                                             <label htmlFor="registration_fname">{lang === "ar" ? (<>الاسم الأول</>) : (<>First Name</>)}</label>
-                                            {lang === "ar" ? (<input type="text" placeholder="الاسم الاول" id="registration_fname" />) : (<input type="text" placeholder="First name" id="registration_fname" />)}
+                                            {lang === "ar" ? (<input type="text" name="fname" placeholder="الاسم الاول" id="registration_fname" />) : (<input type="text" name="fname" placeholder="First name" id="registration_fname" />)}
                                             <span className="registration_input-msg"></span>
                                         </p>
                                         <p className="form-control">
                                             <label htmlFor="registration_lname">{lang === "ar" ? (<>الاسم الاخير</>) : (<>Last Name</>)}</label>
-                                            {lang === "ar" ? (<input type="text" placeholder="الاسم الاخير" id="registration_lname" />) : (<input type="text" placeholder="Last name" id="registration_lname" />)}
+                                            {lang === "ar" ? (<input name="lname" type="text" placeholder="الاسم الاخير" id="registration_lname" />) : (<input name="lname" type="text" placeholder="Last name" id="registration_lname" />)}
 
                                             <span className="registration_input-msg"></span>
                                         </p>
                                         <p className="form-control">
                                             <label htmlFor="registration_email">{lang === "ar" ? (<>عنوان البريد الإلكتروني</>) : (<>Email Address</>)}</label>
-                                            {lang === "ar" ? (<input type="email" placeholder="عنوان البريد الإلكتروني" id="registration_email" />) : (<input type="email" placeholder="Email address" id="registration_email" />)}
+                                            {lang === "ar" ? (<input type="email" name="email" placeholder="عنوان البريد الإلكتروني" id="registration_email" />) : (<input type="email" name="email" placeholder="Email address" id="registration_email" />)}
 
                                             <span className="registration_input-msg"></span>
                                         </p>
                                         <p className="form-control">
                                             <label htmlFor="registration_user">{lang === "ar" ? (<>اسم االمستخدم</>) : (<>User Name</>)}</label>
-                                            {lang === "ar" ? (<input type="text" placeholder="اسم المستخدم" id="registration_user" />) : (<input type="text" placeholder="Username" id="registration_user" />)}
+                                            {lang === "ar" ? (<input type="text" name="username" placeholder="اسم المستخدم" id="registration_user" />) : (<input name="username" type="text" placeholder="Username" id="registration_user" />)}
 
                                             <span className="registration_input-msg"></span>
                                         </p>
                                         <p className="form-control">
                                             <label htmlFor="registration_password">{lang === "ar" ? (<>كلمه السر</>) : (<>Password</>)}</label>
-                                            {lang === "ar" ? (<input type="كلمه السر" placeholder="*******" id="registration_password" />) : (<input type="password" placeholder="*******" id="registration_password" />)}
+                                            {lang === "ar" ? (<input type="كلمه السر" name="password" placeholder="*******" id="registration_password" />) : (<input type="password" name="password" placeholder="*******" id="registration_password" />)}
 
                                             <span className="registration_input-msg"></span>
                                         </p>
@@ -282,42 +301,42 @@ function Register() {
                                         </p>
                                         <p className="form-control">
                                             <label htmlFor="registration_dob">{lang === "ar" ? (<>تاريخ الميلاد</>) : (<>Date of Birth</>)}</label>
-                                            {lang === "ar" ? (<input type="date" placeholder="05/08/2005" id="registration_dob" />) : (<input type="date" placeholder="05/08/2005" id="registration_dob" />)}
+                                            {lang === "ar" ? (<input name="dob" type="date" placeholder="05/08/2005" id="registration_dob" />) : (<input type="date" name="dob" placeholder="05/08/2005" id="registration_dob" />)}
 
                                             <span className="registration_input-msg"></span>
                                         </p>
                                         <p className="form-control">
                                             <label htmlFor="registration_mobile">{lang === "ar" ? (<>رقم الهاتف</>) : (<>Contact Number</>)}</label>
-                                            {lang === "ar" ? (<input type="number" placeholder="971501234567" id="registration_mobile" />) : (<input type="number" placeholder="971589745124" id="registration_mobile" />)}
+                                            {lang === "ar" ? (<input type="number" name="mobile" placeholder="971501234567" id="registration_mobile" />) : (<input type="number" name="mobile" placeholder="971589745124" id="registration_mobile" />)}
 
                                             <span className="registration_input-msg"></span>
                                         </p>
                                         <p className="form-control">
                                             <label htmlFor="registration_idNo">{lang === "ar" ? (<>رقم الهوية</>) : (<>Emirates ID No</>)}</label>
-                                            {lang === "ar" ? (<input type="number" placeholder="784-2009-9452158-7" id="registration_idNo" />) : (<input type="number" placeholder="784-2009-9452158-7" id="registration_idNo" />)}
+                                            {lang === "ar" ? (<input type="number" name="idNumber" placeholder="784-2009-9452158-7" id="registration_idNo" />) : (<input type="number" name="idNumber" placeholder="784-2009-9452158-7" id="registration_idNo" />)}
 
                                             <span className="registration_input-msg"></span>
                                         </p>
                                         <p className="form-control">
                                             <label htmlFor="registration_idExpiry">{lang === "ar" ? (<>تاريخ انتهاء الهوية</>) : (<>Emirates ID Expiry Date</>)}</label>
-                                            {lang === "ar" ? (<input type="date" placeholder="28-05-2022" id="registration_idExpiry" />) : (<input type="date" placeholder="28-05-2022" id="registration_idExpiry" />)}
+                                            {lang === "ar" ? (<input type="date" name="idExpiry" placeholder="28-05-2022" id="registration_idExpiry" />) : (<input type="date" name="idExpiry" placeholder="28-05-2022" id="registration_idExpiry" />)}
 
                                             <span className="registration_input-msg"></span>
                                         </p>
                                         <p className="form-control">
                                             <label htmlFor="registration_passNo">{lang === "ar" ? (<>رقم جواز السفر</>) : (<>Passport Number</>)}</label>
-                                            {lang === "ar" ? (<input type="number" placeholder="ادخل رقم جواز السفر " id="registration_passNo" />) : (<input type="number" placeholder="Enter Passport Number" id="registration_passNo" />)}
+                                            {lang === "ar" ? (<input type="number" name="passportNumber" placeholder="ادخل رقم جواز السفر " id="registration_passNo" />) : (<input name="passportNumber" type="number" placeholder="Enter Passport Number" id="registration_passNo" />)}
 
                                             <span className="registration_input-msg"></span>
                                         </p>
                                         <p className="form-control">
                                             <label htmlFor="registration_passExpiry">{lang === "ar" ? (<>تاريخ انتهاء جواز السفر</>) : (<>Passport Expiry Date</>)}</label>
-                                            {lang === "ar" ? (<input type="date" placeholder="ادخل تاريخ انتهاء جواز" id="registration_passExpiry" />) : (<input type="date" placeholder=" Enter Passport Expiry Date" id="registration_passExpiry" />)}
+                                            {lang === "ar" ? (<input name="passportExpiry" type="date" placeholder="ادخل تاريخ انتهاء جواز" id="registration_passExpiry" />) : (<input type="date" placeholder=" Enter Passport Expiry Date" id="registration_passExpiry" />)}
 
                                             <span className="registration_input-msg"></span>
                                         </p>
 
-                                        <button>{lang === "ar" ? (<>سجل الان</>) : (<>Register Now</>)}</button>
+                                        <button type="submit">{lang === "ar" ? (<>سجل الان</>) : (<>Register Now</>)}</button>
                                     </form>
                                     <div className="have_account-btn text-center">
                                         {lang === "ar" ? (<> <p>هل لديك حساب؟ <Link to="/login">تسجيل الدخول هنا</Link></p></>) : (<> <p>Already have an account? <Link to="/login">Login Here</Link></p></>)}
