@@ -2,13 +2,16 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ModalImage from "react-modal-image";
 import { Styles } from "./styles/campusTour.js";
+import {LangContext} from "./common/contexts/LangContext";
 
 class CampusTour extends Component {
     state = {
         secTitle: "We Have Best Campus In The Region. Let's Explore The Campus.",
+        secTitleArabic: "لدينا افضل مركز لتحفيظ القرأن في المنطقه.  دعنا نكتشف المركز لتحفيظ القرأن الكريم",
     }
-
+    static contextType = LangContext;
     render() {
+        const lang = this.context.lang;
         return (
             <Styles>
                 {/* Campus Tour */}
@@ -17,7 +20,8 @@ class CampusTour extends Component {
                         <Row>
                             <Col md="12">
                                 <div className="sec-title text-center">
-                                    <h4>{this.state.secTitle}</h4>
+                                {lang === "ar" ? ( <h4>{this.state.secTitleArabic}</h4>):( <h4>{this.state.secTitle}</h4>)}
+                                   
                                 </div>
                             </Col>
                             <Col lg="2" md="3">

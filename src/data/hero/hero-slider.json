@@ -20,5 +20,16 @@
         "descArabic": "أهلا بكم في مركز الهدى",
         "btnOneLink": "course-grid",
         "btnTwoLink": "contact"
+    },
+    {
+        "id": "2",
+        "backgroundImage": "slider-3.jpg",
+        "uniqClass": "slider-box slider-box2 text-right",
+        "title": "Welcome To Edulyn.",
+        "titleArabic": "أهلا بكم في مركز الهدى",
+        "desc": "Best University In This Region Join With Us Today",
+        "descArabic": "أهلا بكم في مركز الهدى",
+        "btnOneLink": "course-grid",
+        "btnTwoLink": "contact"
     }
 ]

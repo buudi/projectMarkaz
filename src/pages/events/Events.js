@@ -8,9 +8,12 @@ import Pagination from '../../components/Pagination';
 import CourseSidebar from '../courses/components/CourseSidebar';
 import FooterTwo from '../../components/FooterTwo';
 import { Styles } from './styles/event.js';
+import {LangContext} from "../../components/common/contexts/LangContext";
 
 class Events extends Component {
+    static contextType = LangContext;
     render() {
+        const lang = this.context.lang;
 
         return (
             <Styles>
@@ -21,7 +24,8 @@ class Events extends Component {
                     <HeaderTwo />
 
                     {/* Breadcroumb */}
-                    <BreadcrumbBox title="Events" />
+                    {lang === "ar" ? (<BreadcrumbBox title="أحداث المركز"/>):(<BreadcrumbBox title="Events"/>)}
+                    
 
                     {/* Events Area */}
                     <section className="event-page-area">

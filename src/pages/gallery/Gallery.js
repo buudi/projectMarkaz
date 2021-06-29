@@ -7,9 +7,12 @@ import { BreadcrumbBox } from '../../components/common/Breadcrumb';
 import Pagination from './../../components/Pagination';
 import FooterTwo from '../../components/FooterTwo';
 import { Styles } from './styles/gallery.js';
+import {LangContext} from "../../components/common/contexts/LangContext";
 
 class Gallery extends Component {
+    static contextType = LangContext;
     render() {
+        const lang = this.context.lang;
 
         return (
             <Styles>
@@ -20,7 +23,8 @@ class Gallery extends Component {
                     <HeaderTwo />
 
                     {/* Breadcroumb */}
-                    <BreadcrumbBox title="Gallery" />
+                    {lang === "ar" ? (<BreadcrumbBox title="ألبوم الصور"/>):(<BreadcrumbBox title="Gallery"/>)}
+                    
 
                     {/* Gallery Area */}
                     <section className="gallery-page-area">

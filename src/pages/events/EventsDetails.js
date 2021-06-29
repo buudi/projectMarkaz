@@ -9,9 +9,14 @@ import PopularCourse from './../courses/components/PopularCourse';
 import CourseTag from './../courses/components/CourseTag';
 import FooterTwo from '../../components/FooterTwo';
 import { Styles } from './styles/eventDetails.js';
+import {LangContext} from "../../components/common/contexts/LangContext";
+
 
 class EventDetails extends Component {
+    static contextType = LangContext;
     render() {
+        const lang = this.context.lang;
+    
         return (
             <Styles>
                 {/* Main Wrapper */}
@@ -21,7 +26,8 @@ class EventDetails extends Component {
                     <HeaderTwo />
 
                     {/* Breadcroumb */}
-                    <BreadcrumbBox title="Event Details" />
+                    {lang === "ar" ? (<BreadcrumbBox title="تفاصيل ألاحداث"/>):(<BreadcrumbBox title="Event Details"/>)}
+                    
 
                     {/* Event Details Area */}
                     <section className="event-details-area">
