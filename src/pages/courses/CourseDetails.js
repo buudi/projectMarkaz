@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import HeaderTwo from '../../components/HeaderTwo';
 import { BreadcrumbBox } from '../../components/common/Breadcrumb';
@@ -7,8 +7,10 @@ import PopularCourse from './components/PopularCourse';
 import CourseTag from './components/CourseTag';
 import FooterTwo from '../../components/FooterTwo';
 import { Styles } from './styles/course.js';
+import {LangContext} from "../../components/common/contexts/LangContext";
 
 function CourseDetails() {
+    const {lang} = useContext(LangContext);
     useEffect(() => {
         const courseButton = document.querySelectorAll(".course-button");
         courseButton.forEach(button => {
@@ -34,7 +36,8 @@ function CourseDetails() {
             < HeaderTwo />
 
             {/* Breadcroumb */}
-            < BreadcrumbBox title="Course Details" />
+            {lang === "ar" ? (<BreadcrumbBox title="شرح عن دوراتنا"/>):(< BreadcrumbBox title="Course Details"/>)}
+         
 
             <Styles>
                 {/* Course Details */}

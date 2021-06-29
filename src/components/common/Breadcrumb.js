@@ -15,7 +15,7 @@ export class BreadcrumbBox extends Component {
                         <Row>
                             <Col md="12" className="text-center">
                                 <div className="breadcrumb-box">
-                                    <h2 className="breadcrumb-title">{this.props.title}</h2>
+                                    <h2 className="">{this.props.title}</h2>
                                     <Breadcrumb>
                                         <Breadcrumb.Item>Home</Breadcrumb.Item>
                                         <Breadcrumb.Item active>{this.props.title}</Breadcrumb.Item>

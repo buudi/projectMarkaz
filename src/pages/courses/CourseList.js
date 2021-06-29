@@ -6,10 +6,11 @@ import CourseSidebar from './components/CourseSidebar';
 import CourseItemList from './components/CourseItemsList';
 import FooterTwo from '../../components/FooterTwo';
 import { Styles } from './styles/course.js';
-
+import {LangContext} from "../../components/common/contexts/LangContext";
 class CourseList extends Component {
-
+static contextType = LangContext;
     render() {
+        const lang = this.context.lang;
         return (
             <div className="main-wrapper course-page">
 
@@ -17,7 +18,8 @@ class CourseList extends Component {
                 <HeaderTwo />
 
                 {/* Breadcroumb */}
-                <BreadcrumbBox title="Courses" />
+                {lang === "ar" ? (<BreadcrumbBox title="تفاصيل ألدورات"/>):(<BreadcrumbBox title="Courses" />)}
+                
 
                 <Styles>
                     {/* Course Grid */}
