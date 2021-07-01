@@ -85,7 +85,7 @@ function StickyMenu() {
                                    
                                 </ul>
                                 <div className="apply-btn">
-                                    <Link to={process.env.PUBLIC_URL + "/registration"}><i className="las la-clipboard-list"></i>{lang === "ar" ? (<>قدّم الأن</>):(<>Apply Now</>)}</Link>
+                                    <a href="https://github.com/abda2050/projectMarkaz" target="_blank" ><i className="las la-clipboard-list"></i>{lang === "ar" ? (<>قدّم الأن</>):(<>Apply Now</>)}</a>
                                 </div>
                             </div>
                         </Col>

@@ -65,9 +65,9 @@ function MobileMenu() {
                                 </div>
                                 <div className="topbar-item">
                                     <ul className="list-unstyled list-inline">
-                                        <li className="list-inline-item"><Link to={process.env.PUBLIC_URL + "/login"}>{lang === "ar" ? (<>تسجيل الدخول</>):(<>Login</>)}</Link></li>
+                                        <li className="list-inline-item"><a href="https://github.com/abda2050/projectMarkaz">{lang === "ar" ? (<>تسجيل الدخول</>):(<>Login</>)}</a></li>
                                         <li className="list-inline-item">/</li>
-                                        <li className="list-inline-item"><Link to={process.env.PUBLIC_URL + "/registration"}>{lang === "ar" ? (<>تسجيل</>):(<>Register</>)}</Link></li>
+                                        <li className="list-inline-item"><a href="https://github.com/abda2050/projectMarkaz" target="_blank">{lang === "ar" ? (<>تسجيل</>):(<>Register</>)}</a></li>
                                     </ul>
                                 </div>
                             </div>

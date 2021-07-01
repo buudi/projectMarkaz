@@ -91,7 +91,7 @@ function Login() {
                                             </div>
                                         </div>
                                         <div className="not_account-btn text-center">
-                                        {lang === "ar" ? ( <p>ليس لديك حساب بعد؟ <Link to={process.env.PUBLIC_URL + "/registration"}>انقر هنا</Link></p>) : ( <p>Haven't Any Account Yet? <Link to={process.env.PUBLIC_URL + "/registration"}>Click Here</Link></p>)}
+                                        {lang === "ar" ? ( <p>ليس لديك حساب بعد؟ <a href="https://github.com/abda2050/projectMarkaz" target="_blank">انقر هنا</a></p>) : ( <p>Haven't Any Account Yet? <a href="https://github.com/abda2050/projectMarkaz" target="_blank">Click Here</a></p>)}
                                            
                                         </div>
                                        

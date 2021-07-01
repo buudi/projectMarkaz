@@ -191,7 +191,7 @@ function Register() {
                                                                 <AlertIcon />
                                                                 <span>
                                                                     Registred!{" "}
-                                                                    <Link to={process.env.PUBLIC_URL + "/login"}>Log in here</Link>
+                                                                    <a href="https://github.com/abda2050/projectMarkaz" target="_blank">Log in here</a>
                                                                 </span>
                                                             </Alert>
                                                             <br />

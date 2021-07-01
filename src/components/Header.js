@@ -58,8 +58,8 @@ const Header = () => {
                                     </li>
                                 </ul>
                                 <ul className="list-unstyled list-inline bar-login">
-                                    <li className="list-inline-item"><Link to={process.env.PUBLIC_URL + "/login"}><i className="las la-user"></i>{lang === "ar" ? (<>تسجيل الدخول</>) : (<>Log In</>)}</Link></li>
-                                    <li className="list-inline-item"><Link to={process.env.PUBLIC_URL + "/registration"}><i className="las la-user-edit"></i>{lang === "ar" ? (<>التسجيل</>) : (<>Register</>)}</Link></li>
+                                    <li className="list-inline-item"><a href="https://github.com/abda2050/projectMarkaz" target="_blank"><i className="las la-user"></i>{lang === "ar" ? (<>تسجيل الدخول</>) : (<>Log In</>)}</a></li>
+                                    <li className="list-inline-item"><a href="https://github.com/abda2050/projectMarkaz" target="_blank"><i className="las la-user-edit"></i>{lang === "ar" ? (<>التسجيل</>) : (<>Register</>)}</a></li>
                                 </ul>
                             </div>
                         </Col>
@@ -101,7 +101,7 @@ const Header = () => {
                                     </div>
                                 </div>
                                 <div className="apply-btn">
-                                    <Link to={process.env.PUBLIC_URL + "/registration"}><i className="las la-clipboard-list"></i>{lang ==="ar"?(<>قدّم الأن</>):(<>Apply Now</>)}</Link>
+                                    <a href="https://github.com/abda2050/projectMarkaz" target="_blank"><i className="las la-clipboard-list"></i>{lang ==="ar"?(<>قدّم الأن</>):(<>Apply Now</>)}</a>
                                 </div>
                             </div>
                         </Col>
