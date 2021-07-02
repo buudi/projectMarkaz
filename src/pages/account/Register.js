@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import HeaderTwo from '../../components/HeaderTwo';
@@ -93,7 +93,7 @@ function Register() {
                 .then((res) => {
                     const daString = res.data;
                     if (
-                        daString.indexOf("duplicate key value violates unique constraint") !=
+                        daString.indexOf("duplicate key value violates unique constraint") !==
                         -1
                     ) {
                         setAlertCard(true);
@@ -191,7 +191,7 @@ function Register() {
                                                                 <AlertIcon />
                                                                 <span>
                                                                     Registred!{" "}
-                                                                    <a href="https://github.com/abda2050/projectMarkaz" target="_blank">Log in here</a>
+                                                                    <a href="https://github.com/abda2050/projectMarkaz" target="_blank" rel="noopener noreferrer">Log in here</a>
                                                                 </span>
                                                             </Alert>
                                                             <br />

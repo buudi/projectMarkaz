@@ -3,7 +3,6 @@ import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import HeaderTwo from '../../components/HeaderTwo';
 import { BreadcrumbBox } from '../../components/common/Breadcrumb';
 import ReviewForm from './components/ReviewForm';
-import PopularCourse from './components/PopularCourse';
 import CourseTag from './components/CourseTag';
 import FooterTwo from '../../components/FooterTwo';
 import { Styles } from './styles/course.js';

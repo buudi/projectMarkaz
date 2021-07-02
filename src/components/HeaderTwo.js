@@ -136,7 +136,7 @@ const HeaderTwo  = () => {
                                     <Search />
                                 </div>
                                 <div className="apply-btn">
-                                    <a href="https://github.com/abda2050/projectMarkaz" target="_blank"><i className="las la-clipboard-list"></i>{lang ==="ar"?(<>قدّم الأن</>):(<>Apply Now</>)}</a>
+                                    <a href="https://github.com/abda2050/projectMarkaz" target="_blank" rel="noopener noreferrer"><i className="las la-clipboard-list"></i>{lang ==="ar"?(<>قدّم الأن</>):(<>Apply Now</>)}</a>
                                 </div>
                             </div>
                         </Col>

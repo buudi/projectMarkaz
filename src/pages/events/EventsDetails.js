@@ -5,7 +5,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Timer from 'react-compound-timer';
 import HeaderTwo from '../../components/HeaderTwo';
 import { BreadcrumbBox } from '../../components/common/Breadcrumb';
-import PopularCourse from './../courses/components/PopularCourse';
 import CourseTag from './../courses/components/CourseTag';
 import FooterTwo from '../../components/FooterTwo';
 import { Styles } from './styles/eventDetails.js';

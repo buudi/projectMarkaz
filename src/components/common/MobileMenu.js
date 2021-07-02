@@ -64,11 +64,11 @@ function MobileMenu() {
                                     <p><i className="las la-phone"></i>+971 263 3338</p>
                                 </div>
                                 <div className="topbar-item">
-                                    <ul className="list-unstyled list-inline">
+                                    {/* <ul className="list-unstyled list-inline">
                                         <li className="list-inline-item"><a href="https://github.com/abda2050/projectMarkaz">{lang === "ar" ? (<>تسجيل الدخول</>):(<>Login</>)}</a></li>
                                         <li className="list-inline-item">/</li>
                                         <li className="list-inline-item"><a href="https://github.com/abda2050/projectMarkaz" target="_blank">{lang === "ar" ? (<>تسجيل</>):(<>Register</>)}</a></li>
-                                    </ul>
+                                    </ul> */}
                                 </div>
                             </div>
                             <div className="mb-logo-area d-flex justify-content-between">

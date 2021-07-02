@@ -1,4 +1,4 @@
-import React, { useContext, useState} from 'react';
+import React, { useContext} from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Dropdown } from 'react-bootstrap';
 import Search from './common/Search';
@@ -101,7 +101,7 @@ const Header = () => {
                                     </div>
                                 </div>
                                 <div className="apply-btn">
-                                    <a href="https://github.com/abda2050/projectMarkaz" target="_blank"><i className="las la-clipboard-list"></i>{lang ==="ar"?(<>قدّم الأن</>):(<>Apply Now</>)}</a>
+                                    <a href="https://github.com/abda2050/projectMarkaz" target="_blank" rel="noopener noreferrer"><i className="las la-clipboard-list"></i>{lang ==="ar"?(<>قدّم الأن</>):(<>Apply Now</>)}</a>
                                 </div>
                             </div>
                         </Col>
