@@ -10,15 +10,15 @@ import { LangContext } from "./common/contexts/LangContext";
 
 class AboutUs extends Component {
     constructor() {
-        super()
+        super();
         this.state = {
             isOpen: false
-        }
-        this.openModal = this.openModal.bind(this)
+        };
+        this.openModal = this.openModal.bind(this);
     }
 
     openModal() {
-        this.setState({ isOpen: true })
+        this.setState({ isOpen: true });
     }
 
     static contextType = LangContext;
@@ -35,7 +35,7 @@ class AboutUs extends Component {
                                 <div className="about-image">
                                     <img src={process.env.PUBLIC_URL + `/assets/images/${Datas.mainImage}`} className="main-img" alt="" />
                                     <img src={process.env.PUBLIC_URL + "/assets/images/pattern.png"} className="pattern-img" alt="" />
-                                    <div className="video-player" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/${Datas.videoBackground})`}}>
+                                    <div className="video-player" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/${Datas.videoBackground})` }}>
                                         <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='uXFUl0KcIkA' onClose={() => this.setState({ isOpen: false })} />
                                         <button onClick={this.openModal} className="play-button"><i className="las la-play"></i></button>
                                     </div>
@@ -46,48 +46,46 @@ class AboutUs extends Component {
                                     {lang === "ar" ? (
                                         <>
                                             <h4 className="about-title">{Datas.titleArabic}</h4>
-                                    <p className="about-para">{Datas.desc1Arabic}<span>{Datas.desc2Arabic}</span></p>
+                                            <p className="about-para">{Datas.desc1Arabic}<span>{Datas.desc2Arabic}</span></p>
                                         </>
-                                    ):(
+                                    ) : (
                                         <>
-                                        <h4 className="about-title">{Datas.title}</h4>
-                                        <p className="about-para">{Datas.desc1}<span>{Datas.desc2}</span></p>
-                                    </>
-                                    )
-                                    
-                                }
-                                  
+                                            <h4 className="about-title">{Datas.title}</h4>
+                                            <p className="about-para">{Datas.desc1}<span>{Datas.desc2}</span></p>
+                                        </>
+                                    )}
+
                                     <Row>
                                         <Col sm="4">
                                             <div className="counter-box box1 text-center">
                                                 <h3><CountUp end={970} duration={5} delay={1.5} /><i className="las la-plus"></i></h3>
-                                                {lang === "ar" ? (<p>الطلاب السعداء</p>):(<p>Happy Students</p>)}
-                                                
+                                                {lang === "ar" ? (<p>الطلاب السعداء</p>) : (<p>Happy Students</p>)}
+
                                             </div>
                                         </Col>
                                         <Col sm="4">
                                             <div className="counter-box box2 text-center">
                                                 <h3><CountUp end={130} duration={5} delay={1.5} /><i className="las la-plus"></i></h3>
-                                                
-                                                {lang === "ar" ? (<p>المعلمون</p>):(<p>Teachers</p>)}
+
+                                                {lang === "ar" ? (<p>المعلمون</p>) : (<p>Teachers</p>)}
                                             </div>
                                         </Col>
                                         <Col sm="4">
                                             <div className="counter-box box3 text-center">
                                                 <h3><CountUp end={340} duration={5} delay={1.5} /><i className="las la-plus"></i></h3>
-                                                {lang === "ar" ? (<p>الدورات</p>):(<p>Courses</p>)}
+                                                {lang === "ar" ? (<p>الدورات</p>) : (<p>Courses</p>)}
                                             </div>
                                         </Col>
                                     </Row>
-                                    <Link className="readmore-btn" to={process.env.PUBLIC_URL + "/about"}>{lang === "ar" ? (<>اقرأ المزيد</>) : (<>Read More</>) }</Link>
+                                    <Link className="readmore-btn" to={process.env.PUBLIC_URL + "/about"}>{lang === "ar" ? (<>!قدّم الأن</>) : (<>Apply Now!</>)}</Link>
                                 </div>
                             </Col>
                         </Row>
                     </Container>
                 </section>
             </Styles>
-        )
+        );
     }
 }
 
-export default AboutUs
+export default AboutUs;
