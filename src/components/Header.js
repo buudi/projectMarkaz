@@ -57,10 +57,10 @@ const Header = () => {
                                         </Dropdown>
                                     </li>
                                 </ul>
-                                <ul className="list-unstyled list-inline bar-login">
+                                {/* <ul className="list-unstyled list-inline bar-login">
                                     <li className="list-inline-item"><a href="https://github.com/abda2050/projectMarkaz" target="_blank"><i className="las la-user"></i>{lang === "ar" ? (<>تسجيل الدخول</>) : (<>Log In</>)}</a></li>
                                     <li className="list-inline-item"><a href="https://github.com/abda2050/projectMarkaz" target="_blank"><i className="las la-user-edit"></i>{lang === "ar" ? (<>التسجيل</>) : (<>Register</>)}</a></li>
-                                </ul>
+                                </ul> */}
                             </div>
                         </Col>
                     </Row>
@@ -131,8 +131,8 @@ const Header = () => {
                                             <ul className="dropdown list-unstyled">
                                                 <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/about"}>{lang === "ar"?(<> معلومات عنا </>):(<>About Us</>)}</Link></li>
                                                 <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/gallery"}>{lang === "ar"?(<> الصور </>):(<>Gallery</>)}</Link></li>
-                                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/login"}>{lang === "ar"? (<>تسجيل الدخول</>):(<>Log in</>)}</Link></li>
-                                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/registration"}>{lang === "ar" ? (<>التسجيل</>) : (<>Registration</>)}</Link></li>
+                                                {/* <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/login"}>{lang === "ar"? (<>تسجيل الدخول</>):(<>Log in</>)}</Link></li>
+                                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/registration"}>{lang === "ar" ? (<>التسجيل</>) : (<>Registration</>)}</Link></li> */}
                                                 <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/contact"}>{lang === "ar" ? (<>تواصل معنا</>):(<>Contact</>)}</Link></li>
                                                 <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/faq"}>{lang==="ar" ? (<>أسئلة شائعة</>):(<>Faq</>)}</Link></li>
                                                 <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/404"}>404</Link></li>
