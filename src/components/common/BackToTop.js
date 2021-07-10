@@ -6,7 +6,7 @@ function BackToTop() {
         const topBtn = document.querySelector(".totop-btn");
 
         window.addEventListener("scroll", () => {
-            if (window.scrollY > 750) {
+            if (window.scrollY > 0) {
                 topBtn.classList.add("show");
             } else {
                 topBtn.classList.remove("show");

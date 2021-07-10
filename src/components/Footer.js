@@ -3,8 +3,9 @@ import Datas from '../data/footer/footer.json';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import BackToTop from './common/BackToTop';
+import ChatBotButton from "./common/ChatBotButton";
 import { Styles } from "./styles/footerOne.js";
-import { LangContext} from "./common/contexts/LangContext";
+import { LangContext } from "./common/contexts/LangContext";
 
 class Footer extends Component {
     static contextType = LangContext;
@@ -29,17 +30,17 @@ class Footer extends Component {
                             </Col>
                             <Col md="4">
                                 <div className="f-links">
-                                    <h5>{lang === "ar" ? (<>روابط مفيدة</>):(<>USEFUL LINKS</>)}</h5>
-                                   
+                                    <h5>{lang === "ar" ? (<>روابط مفيدة</>) : (<>USEFUL LINKS</>)}</h5>
+
                                     <ul className="list-unstyled">
-                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>{lang === "ar" ? ( <> معلومات عامة
-</> ):( <>General Information</>)}</Link></li>
-                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>{lang === "ar" ? ( <>مركز المساعدة
-</> ):( <>Help Center</>)}</Link></li>
-                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>{lang === "ar" ? ( <>خدمتنا</> ):( <>Our Services</>)}</Link></li>
-                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>{lang === "ar" ? ( <>سياسة خاصة
-</> ):( <>Privacy Policy</>)}</Link></li>
-                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>{lang === "ar" ? ( <>الدعم الالكتروني</> ):( <>Online Support</>)}</Link></li>
+                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>{lang === "ar" ? (<> معلومات عامة
+                                        </>) : (<>General Information</>)}</Link></li>
+                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>{lang === "ar" ? (<>مركز المساعدة
+                                        </>) : (<>Help Center</>)}</Link></li>
+                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>{lang === "ar" ? (<>خدمتنا</>) : (<>Our Services</>)}</Link></li>
+                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>{lang === "ar" ? (<>سياسة خاصة
+                                        </>) : (<>Privacy Policy</>)}</Link></li>
+                                        <li><Link to={process.env.PUBLIC_URL + "/"}><i className="las la-angle-right"></i>{lang === "ar" ? (<>الدعم الالكتروني</>) : (<>Online Support</>)}</Link></li>
                                     </ul>
                                 </div>
                             </Col>
@@ -51,7 +52,7 @@ class Footer extends Component {
                                             <img src={process.env.PUBLIC_URL + "/assets/images/blog-2.jpg"} alt="" />
                                         </div>
                                         <div className="post-content">
-                                            <Link to={process.env.PUBLIC_URL +"/blog-details"}>Lorem ipsum dolor sit amet consectet adipisicing elit com...</Link>
+                                            <Link to={process.env.PUBLIC_URL + "/blog-details"}>Lorem ipsum dolor sit amet consectet adipisicing elit com...</Link>
                                             <span>Mar 30, 2020</span>
                                         </div>
                                     </div>
@@ -60,7 +61,7 @@ class Footer extends Component {
                                             <img src={process.env.PUBLIC_URL + "/assets/images/blog-3.jpg"} alt="" />
                                         </div>
                                         <div className="post-content">
-                                            <Link to={process.env.PUBLIC_URL +"/blog-details"}>Lorem ipsum dolor sit amet consectet adipisicing elit com...</Link>
+                                            <Link to={process.env.PUBLIC_URL + "/blog-details"}>Lorem ipsum dolor sit amet consectet adipisicing elit com...</Link>
                                             <span>Mar 30, 2020</span>
                                         </div>
                                     </div>
@@ -81,22 +82,23 @@ class Footer extends Component {
                             </Col>
                             <Col md="6" className="text-right">
                                 <ul className="social list-unstyled list-inline">
-                                    <li className="list-inline-item"><a href="https://www.facebook.com/markazalhuda" target="_blank"rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
+                                    <li className="list-inline-item"><a href="https://www.facebook.com/markazalhuda" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
                                     <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-twitter"></i></a></li>
-                                    
+
                                     <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-youtube"></i></a></li>
-                                    
+
                                 </ul>
                             </Col>
                         </Row>
                     </Container>
 
                     {/* Back To Top */}
-                    <BackToTop/>
+                    <ChatBotButton />
+                    <BackToTop />
                 </section>
             </Styles>
-        )
+        );
     }
 }
 
-export default Footer
+export default Footer;
