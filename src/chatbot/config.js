@@ -3,7 +3,7 @@ import { createChatBotMessage } from "react-chatbot-kit";
 import Options from "./components/options/Options";
 
 const config = {
-    botName: "LearningBot",
+    botName: "Layla the bot",
     customStyles: {
         botMessageBox: {
             backgroundColor: "#328f46"

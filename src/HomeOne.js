@@ -10,7 +10,6 @@ import TeamSlider from './components/TeamSlider';
 import HelpArea from './components/HelpArea';
 import HomeBlog from './components/HomeBlog';
 import CampusTour from './components/CampusTour';
-import NewsletterForm from './components/NewsletterForm';
 import Footer from './components/Footer';
 
 export default class HomeOne extends Component {
@@ -52,12 +51,12 @@ export default class HomeOne extends Component {
                 < CampusTour />
 
                 {/* Newsletter Form */}
-               
+
 
                 {/* Footer */}
                 < Footer />
 
             </div >
-        )
+        );
     }
 }

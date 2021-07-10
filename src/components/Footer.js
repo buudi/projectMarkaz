@@ -3,7 +3,6 @@ import Datas from '../data/footer/footer.json';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import BackToTop from './common/BackToTop';
-import ChatBotButton from "./common/ChatBotButton";
 import { Styles } from "./styles/footerOne.js";
 import { LangContext } from "./common/contexts/LangContext";
 
@@ -24,7 +23,7 @@ class Footer extends Component {
                                     <ul className="list-unstyled">
                                         <li><i className="las la-map-marker"></i>Al MizharAl Mizhar 1 - Dubai.</li>
                                         <li><i className="las la-envelope"></i>Markazalhudadubai@gmail.com</li>
-                                        <li><i className="las la-phone"></i>+971 (04) 263 3338<br/> +971 (04) 265 7438<br/>+971 (056) 851 1618<br/>+971 (050) 852 2004</li>
+                                        <li><i className="las la-phone"></i>+971 (04) 263 3338<br /> +971 (04) 265 7438<br />+971 (056) 851 1618<br />+971 (050) 852 2004</li>
                                     </ul>
                                 </div>
                             </Col>
@@ -93,7 +92,6 @@ class Footer extends Component {
                     </Container>
 
                     {/* Back To Top */}
-                    <ChatBotButton />
                     <BackToTop />
                 </section>
             </Styles>

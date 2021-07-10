@@ -6,7 +6,7 @@ const Options = (props) => {
   const options = [
     {
       text: "مواعيد الدوام ؟",
-      handler: props.actionProvider.handleJavascriptQuiz,
+      handler: props.actionProvider.handleTimings,
       id: 1,
     },
       { text: "كيفيه التسجيل",
