@@ -22,6 +22,18 @@ class MessageParser {
         if (lowercase.includes("جنسية")) {
             this.actionProvider.handleTeacherNation();
         }
+
+        if (lowercase.includes("متطلبات")) {
+            this.actionProvider.handleRequirments();
+        }
+
+        if (lowercase.includes("حلقات") || lowercase.includes("حلقه")) {
+            this.actionProvider.handleLiveClasses();
+        }
+
+        if (lowercase.includes("عمر") || lowercase.includes("اعمار")) {
+            this.actionProvider.handleAge();
+        }
     }
 }
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { createChatBotMessage } from "react-chatbot-kit";
 import Options from "./components/options/Options";
+import BotAvatar from "./BotAvatar";
 
 const config = {
     botName: "Layla the bot",
@@ -15,6 +16,9 @@ const config = {
     initialMessages: [createChatBotMessage(`السلام عليكم, مرحباً بكم في مركز الهدا لتحفيظ القران الكريم , كيف يمكنني أن أساعدك؟`, {
         widget: "options"
     })],
+    customComponents: {
+        botAvatar: (props) => <BotAvatar {...props} />,
+    },
     widgets: [
         {
             widgetName: "options",
