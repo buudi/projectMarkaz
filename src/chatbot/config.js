@@ -13,7 +13,7 @@ const config = {
             backgroundColor: "#328f46"
         }
     },
-    initialMessages: [createChatBotMessage(`السلام عليكم, مرحباً بكم في مركز الهدا لتحفيظ القران الكريم , كيف يمكنني أن أساعدك؟`, {
+    initialMessages: [createChatBotMessage(`لاالسلام عليكم, مرحباً بكم في مركز الهدا لتحفيظ القران الكريم , كيف يمكنني أن أساعدك؟`, {
         widget: "options"
     })],
     customComponents: {

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Styles } from "./styles/stickyMenu.js";
 import { LangContext } from "./contexts/LangContext";
+import ChatBotButton from "../../components/common/ChatBotButton";
 
 function StickyMenu() {
     const {lang} = useContext(LangContext);
@@ -88,6 +89,9 @@ function StickyMenu() {
                                     <a href="https://github.com/abda2050/projectMarkaz" target="_blank" rel="noopener noreferrer"><i className="las la-clipboard-list"></i>{lang === "ar" ? (<>قدّم الأن</>):(<>Apply Now</>)}</a>
                                 </div>
                             </div>
+                            <li className="list-inline-item">
+                                        <ChatBotButton />
+                                    </li>
                         </Col>
                     </Row>
                 </Container>
