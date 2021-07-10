@@ -114,7 +114,7 @@ function Contact() {
                                     </div>
                                     <div className="box-content">
                                         <h5>{lang === "ar" ? (<>رقم الهاتف</>) : (<>Phone Number</>)}</h5>
-                                        <p>+971 (04) 263 3338<br/>+971 (04) 265 7438</p>
+                                        <p>+971 (04) 263 3338<br/>+971 (04) 265 7438<br/>+971 (056) 851 1618<br/>+971 (050) 852 2004</p>
                                     </div>
                                 </div>
                                 <div className="contact-social">
