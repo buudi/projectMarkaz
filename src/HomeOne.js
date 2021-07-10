@@ -52,7 +52,7 @@ export default class HomeOne extends Component {
                 < CampusTour />
 
                 {/* Newsletter Form */}
-                < NewsletterForm />
+               
 
                 {/* Footer */}
                 < Footer />
