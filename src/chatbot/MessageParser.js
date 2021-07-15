@@ -19,7 +19,7 @@ class MessageParser {
             this.actionProvider.handleRegistration();
         }
 
-        if (lowercase.includes("جنسية")) {
+        if (lowercase.includes("جنسية")){
             this.actionProvider.handleTeacherNation();
         }
 
