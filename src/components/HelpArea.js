@@ -76,21 +76,21 @@ function HelpArea() {
                                 <Row>
                                     <Col md="4">
                                         <p className="form-control">
-                                            {lang === "ar"?(<input type="text" placeholder="اكتب اسمك" id="name1" />):( <input type="text" placeholder="Enter your Name" id="name1" />)}
+                                            {lang === "ar"?(<input type="text" placeholder="أكتب اسمك" id="name1" />):( <input type="text" placeholder="Enter your Name" id="name1" />)}
                                            
                                             <span className="input-msg1"></span>
                                         </p>
                                     </Col>
                                     <Col md="4">
                                         <p className="form-control">
-                                        {lang === "ar"?(<input type="email" placeholder="اكتب ايميلك" id="email1" />):(<input type="email" placeholder="Enter your Email" id="email1" />)}
+                                        {lang === "ar"?(<input type="email" placeholder="أكتب ايميلك" id="email1" />):(<input type="email" placeholder="Enter your Email" id="email1" />)}
                                             
                                             <span className="input-msg1"></span>
                                         </p>
                                     </Col>
                                     <Col md="4">
                                         <p className="form-control">
-                                        {lang === "ar"?(  <input type="text" placeholder="اكتب المشكله" id="subject1" />):(  <input type="text" placeholder="Enter Subject" id="subject1" />)}
+                                        {lang === "ar"?(  <input type="number" placeholder="أكتب رقمك" id="subject1" />):(  <input type="number" placeholder="Enter Your Number" id="subject1" />)}
                                           
                                             <span className="input-msg1"></span>
                                         </p>
